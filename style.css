@@ -57,6 +57,26 @@ button {
   font-weight: 550;
 }
 
+.action-buttons {
+  width: fit-content;
+  cursor: pointer;
+  border: 1px solid #6070ff;
+  margin-top: 30px;
+  border-radius: 8px;
+  padding: 15px 20px;
+}
+
+.action-buttons:hover {
+  background: #6070ff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.action-buttons:focus {
+  background: #2230d2;
+  color: #fff;
+}
+
 .page-wrapper {
   background: #e5e5e5;
   width: 380px;
@@ -106,14 +126,6 @@ button {
   margin-inline-start: 0.01px;
 }
 
-.normal-button {
-  width: fit-content;
-  border: 1px solid #6070ff;
-  margin-top: 30px;
-  border-radius: 8px;
-  padding: 15px 20px;
-}
-
 .about-myself {
   padding-top: 100px;
   width: 92%;
@@ -149,32 +161,6 @@ button {
   list-style-type: none;
   padding-inline-start: 1px;
   margin-block-start: 0.01em;
-}
-
-.contact-text {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 10px;
-}
-
-.contact-me {
-  background-image: url(./images/Contact_me.png);
-}
-
-.contact-text p {
-  text-align: center;
-}
-
-.text-form {
-  font-family: "Poppins", sans-serif;
-  color: #172b4d;
-  font-size: 17px;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #fff;
-  background: #fff;
 }
 
 /* FIRST PROJECT STYLING */
@@ -251,52 +237,4 @@ h1 {
   list-style-type: none;
   padding-inline-start: 1px;
   margin-block-start: 0.01em;
-}
-
-.button-wrapper {
-  margin: 0 auto 50px auto;
-  width: 650px;
-}
-
-.button-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10px;
-}
-
-.button-actions {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.action-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.action-buttons {
-  width: fit-content;
-  cursor: pointer;
-  border: 1px solid #6070ff;
-  margin-top: 30px;
-  border-radius: 8px;
-  padding: 15px 20px;
-}
-
-#hover:hover {
-  background: #6070ff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  color: #fff;
-}
-
-#pressed:focus {
-  background: #2230d2;
-  color: #fff;
-}
-
-#disabled {
-  color: #5e6c84;
 }
