@@ -260,3 +260,53 @@ h1 {
   padding-inline-start: 1px;
   margin-block-start: 0.01em;
 }
+
+.button-wrapper {
+  margin: 0 auto 50px auto;
+  /* background: rgb(238, 85, 85); */
+  width: 650px;
+}
+
+.button-section {
+  display: flex;
+  /* background: chartreuse; */
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.button-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.action-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.action-buttons {
+  width: fit-content;
+  cursor: pointer;
+  border: 1px solid #6070ff;
+  margin-top: 30px;
+  border-radius: 8px;
+  padding: 15px 20px;
+}
+
+#hover:hover {
+  background: #6070ff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+#pressed:focus {
+  background: #2230d2;
+  color: #fff;
+}
+
+#disabled {
+  color: #5e6c84;
+}
