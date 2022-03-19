@@ -47,16 +47,16 @@ p {
   margin-block-start: 0.01px;
   margin-inline-end: 0.01px;
   margin-inline-start: 0.01px;
-
 }
 
 button {
   font-size: 17px;
-  color: #396DF2;
+  color: #396df2;
   background: #fff;
   border: none;
   font-weight: 550;
 }
+
 .page-wrapper {
   background: #e5e5e5;
   width: 380px;
@@ -73,7 +73,8 @@ button {
   row-gap: 100px;
 }
 
-.card-work, .about-myself {
+.card-work,
+.about-myself {
   background: #fff;
   width: 330px;
   padding: 15px;
@@ -83,14 +84,14 @@ button {
   justify-content: center;
 }
 
-.snapshoot img{
+.snapshoot img {
   width: 100%;
 }
 
 .tags {
   display: flex;
   flex-direction: row;
-  justify-content:left;
+  justify-content: left;
 }
 
 .tags li {
@@ -106,7 +107,7 @@ button {
 
 .normal-button {
   width: fit-content;
-  border: 1px solid #6070FF;
+  border: 1px solid #6070ff;
   margin-top: 30px;
   border-radius: 8px;
   padding: 15px 20px;
