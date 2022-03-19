@@ -263,13 +263,11 @@ h1 {
 
 .button-wrapper {
   margin: 0 auto 50px auto;
-  /* background: rgb(238, 85, 85); */
   width: 650px;
 }
 
 .button-section {
   display: flex;
-  /* background: chartreuse; */
   flex-direction: column;
   justify-content: center;
   padding: 10px;
