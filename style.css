@@ -162,9 +162,11 @@ button {
 .contact-me {
   background-image: url(./images/Contact_me.png);
 }
+
 .contact-text p {
   text-align: center;
 }
+
 .text-form {
   font-family: "Poppins", sans-serif;
   color: #172b4d;
@@ -174,7 +176,6 @@ button {
   border: 1px solid #fff;
   background: #fff;
 }
-
 
 /* FIRST PROJECT STYLING */
 
@@ -197,15 +198,15 @@ h1 {
   margin-top: 60px;
 }
 
-p {
+/* p {
   color: #344563;
   font-family: "Poppins", sans-serif;
   text-align: left;
   font-size: 16px;
   line-height: 23px;
-}
+} */
 
-.let-connect {
+.header .let-connect {
   color: #7f8cff;
   font-size: 18px;
 }
@@ -242,16 +243,16 @@ p {
   padding: 24px;
 }
 
-.social {
+.container .social {
   display: flex;
   flex-direction: column;
 }
 
-.social img {
+.container .social img {
   padding-right: 14px;
 }
 
-.social-icons {
+.container .social-icons {
   display: flex;
   flex-direction: row;
   justify-content: start;
