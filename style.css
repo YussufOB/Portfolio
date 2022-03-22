@@ -371,6 +371,7 @@ textarea:focus {
   text-align: center;
   padding: 12px 12px;
 }
+
 #touchbutton:hover{
   background-color: #6070ff;
   color: #fff;
