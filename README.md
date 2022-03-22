@@ -17,7 +17,14 @@
 - linters for HTML and CSS
 
 ### Run tests
-- Linters error
+- Open your terminal, move to the directory where you want to clone the app (i.e cd Documents) 
+- Enter git clone git@github.com:YussufOB/My-Portfolio-Part-II.git
+- Change to the directory you just clone into (i.e cd My-Portfolio-Part-II)
+- Open index.html from the list of files in your left handside
+- Right click on your opened index.html file and launch the live server to preview
+- Include any possible changes and run "git add ." 
+- Commit the changes with a descriptive message (i.e xyz features added) 
+- Push the changes to changes to the repository (i.e git push)
 
 
 ## Authors
