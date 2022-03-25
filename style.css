@@ -26,6 +26,7 @@ a {
 p {
   color: #344563;
 }
+
 h1,
 h2 {
   font-weight: bolder;
@@ -43,7 +44,6 @@ section {
 }
 
 button {
-  border: none;
   width: fit-content;
   cursor: pointer;
   border: 1px solid #6070ff;
@@ -106,7 +106,6 @@ textarea:focus {
   outline: none;
 }
 
-
 .wrapper {
   display: grid;
   justify-content: center;
@@ -117,7 +116,6 @@ textarea:focus {
 .front-wrapper {
   max-width: 375px;
   margin: 0 auto;
-  background-color: blueviolet;
 }
 
 .row-wrapper {
@@ -175,7 +173,7 @@ textarea:focus {
   background-repeat: no-repeat;
   background-image: url(./image/contact_form_shape.png);
   background-color: #6070ff;
-  /* margin-top: -100px; */
+  margin-top: -150px;
   background-size: 60% 100%;
   border-top-left-radius: 70px;
 }
@@ -201,7 +199,25 @@ textarea:focus {
   border-top-right-radius: 70px;
 }
 
-.hide-image {
+.about-wrapper .let-connect {
+  margin-bottom: 20px;
+}
+
+.language li {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.with-border {
+  border-bottom: 1px solid #ebebff;
+  padding: 20px 0;
+}
+
+#resume {
+  margin: 25px 0;
+}
+
+.hide-images {
   display: none;
 }
 
@@ -264,11 +280,11 @@ textarea:focus {
   flex-direction: column-reverse;
 }
 
-.min-card-image {
+.min-card-images {
   width: auto;
 }
 
-.max-card-image {
+.max-card-images {
   display: none;
 }
 
@@ -305,6 +321,14 @@ textarea:focus {
   max-width: 300px;
 }
 
+.topic-languages li {
+  background-color: #ebebff;
+  color: #6070ff;
+  padding: 8px 10px;
+  border-radius: 12px;
+  margin: 20px 10px;
+}
+
 /* MEDIA QUERY STYLING */
 
 @media (min-width:768px) {
@@ -328,7 +352,6 @@ textarea:focus {
     height: 100vh;
     padding: 0 260px;
     border-bottom-left-radius: 200px;
-    background-color: aquamarine;
     background-image: url(./image/Header_bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -355,7 +378,6 @@ textarea:focus {
   }
 
   .card-work {
-    /* background-color: aqua; */
     display: grid;
     align-items: center;
     justify-content:start;
@@ -398,11 +420,11 @@ textarea:focus {
     color: #344563;
   }
 
-  .min-card-image {
+  .min-card-images {
     display: none;
   }
   
-  .max-card-image {
+  .max-card-images {
     display: flex;
   }
 
@@ -414,7 +436,7 @@ textarea:focus {
     background-repeat: no-repeat;
     background-image: url(./image/contact\ _form_background_shapes.svg);
     background-color: #6070ff;
-    margin: 0;
+    margin: -150px 0 0 0;
     background-size: 100% 100%;
     align-items: center;
     max-width: 100%;
@@ -443,16 +465,39 @@ textarea:focus {
     border-top-right-radius: 100px;
   }
 
+  .language li {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .with-border {
+    border-bottom: 1px solid #ebebff;
+    padding: 20px 0;
+  }
+
+  #sub-list {
+    display: inline-block;
+  }
+
   .about-wrapper {
     display: flex;
     align-items: center;
-  }
-  
-  .hide-image {
-    display: inherit;
+    justify-content: space-evenly;
   }
 
-  .show-image {
+  .about-text p {
+    max-width: 450px;
+  }
+  .about-wrapper .let-connect {
+    margin-bottom: 20px;
+  }
+  
+  .hide-images {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .show-images {
     display: none;
   }
 }
