@@ -26,7 +26,8 @@ a {
 p {
   color: #344563;
 }
-h1, h2 {
+h1,
+h2 {
   font-weight: bolder;
   line-height: 40px;
   color: #091e42;
@@ -50,7 +51,6 @@ button {
   background-color: #fff;
   font-size: 17px;
   font-weight: 550;
-  
   border-radius: 8px;
   padding: 15px 20px;
 }
@@ -435,13 +435,6 @@ textarea:focus {
     padding-bottom: 50px;
     max-width: 550px;
   } 
-
-  /* #contact-me { 
-    background-color: #6070ff;
-    background-image: url(./image/contact\ _form_background_shapes.svg);
-    margin-top: 0;
-    border-radius: 70px 0 0 0;
-  } */
 
   #about-myself {
     max-width: 100%;
