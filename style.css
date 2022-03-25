@@ -109,7 +109,6 @@ textarea:focus {
 .wrapper {
   display: grid;
   justify-content: center;
-  grid-template-rows: 6;
   gap: 100px;
 }
 
@@ -122,6 +121,7 @@ textarea:focus {
   max-width: 350px;
   margin: 0 auto;
 }
+
 /* NAV STYLING */
 
 .flex-nav {
@@ -131,7 +131,7 @@ textarea:focus {
   padding: 10px 7%;
   background-color: #fff;
 }
-  
+
 .my-logo {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
@@ -139,7 +139,7 @@ textarea:focus {
   color: #6070ff;
   font-size: 20px;
 }
-  
+
 .menu-list {
   display: none;
 }
@@ -153,12 +153,12 @@ textarea:focus {
 .union-icon {
   width: 22px;
 }
-  
+
 .union-icon img {
   width: 100%;
 }
 
-  /* SECTION STYLING */
+/* SECTION STYLING */
 
 #headline-section {
   height: 600px;
@@ -199,6 +199,12 @@ textarea:focus {
   border-top-right-radius: 70px;
 }
 
+.let-connect {
+  padding-top: 10px;
+  color: #7f8cff;
+  font-size: 15px;
+}
+
 .about-wrapper .let-connect {
   margin-bottom: 20px;
 }
@@ -235,12 +241,6 @@ textarea:focus {
   line-height: 30px;
 }
 
-.let-connect {
-  padding-top: 10px;
-  color: #7f8cff;
-  font-size: 15px;
-}
-
 .section-container {
   display: flex;
   flex-direction: column;
@@ -261,7 +261,7 @@ textarea:focus {
   flex-direction: row;
 }
 
-.social-icons li img{
+.social-icons li img {
   width: 30px;
   padding-right: 10px;
   padding-top: 10px;
@@ -297,7 +297,6 @@ textarea:focus {
 .card-text ul {
   display: flex;
   margin-bottom: 20px;
-  /* position: relative; */
 }
 
 .hide-text {
@@ -311,6 +310,14 @@ textarea:focus {
   font-size: 15px;
 }
 
+.topic-languages li {
+  background-color: #ebebff;
+  color: #6070ff;
+  padding: 8px 10px;
+  border-radius: 12px;
+  margin: 20px 10px;
+}
+
 .topics li:first-child {
   font-weight: bold;
   color: #344563;
@@ -321,18 +328,9 @@ textarea:focus {
   max-width: 300px;
 }
 
-.topic-languages li {
-  background-color: #ebebff;
-  color: #6070ff;
-  padding: 8px 10px;
-  border-radius: 12px;
-  margin: 20px 10px;
-}
-
 /* MEDIA QUERY STYLING */
 
-@media (min-width:768px) {
-
+@media (min-width: 768px) {
   /* NAV & HEADLINE SECTION STYLINGS USING MEDIA QUERY */
 
   .front-wrapper {
@@ -342,7 +340,7 @@ textarea:focus {
   .menu-list {
     display: flex;
   }
-  
+
   .union-icon {
     display: none;
     width: 22px;
@@ -359,10 +357,10 @@ textarea:focus {
 
   .text-area h1 {
     font-size: 45px;
-    margin-top: 0px;
+    margin-top: 0;
     max-width: 400px;
   }
-  
+
   .text-area p {
     font-size: 20px;
   }
@@ -380,7 +378,7 @@ textarea:focus {
   .card-work {
     display: grid;
     align-items: center;
-    justify-content:start;
+    justify-content: start;
     column-count: 2;
     column-gap: 20px;
     grid-template-columns: repeat(2, 50%);
@@ -390,20 +388,21 @@ textarea:focus {
   .card-text {
     min-height: 70%;
   }
+
   .card-text p {
     font-size: 16px;
     min-width: 90%;
-    padding: 0 10px 20px 0px;
+    padding: 0 10px 20px 0;
   }
 
   .card-text h2 {
     font-size: 37px;
-    padding: 0 10px 20px 0px;
+    padding: 0 10px 20px;
     min-width: 90%;
   }
 
   .topics li {
-    padding-right: 10px ;
+    padding-right: 10px;
     font-size: 18px;
   }
 
@@ -423,7 +422,7 @@ textarea:focus {
   .min-card-images {
     display: none;
   }
-  
+
   .max-card-images {
     display: flex;
   }
@@ -432,7 +431,7 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-position: 0 0 ;
+    background-position: 0 0;
     background-repeat: no-repeat;
     background-image: url(./image/contact\ _form_background_shapes.svg);
     background-color: #6070ff;
@@ -449,14 +448,14 @@ textarea:focus {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .primary-text p {
     font-size: 20px;
     color: #fff;
     text-align: center;
     padding-bottom: 50px;
     max-width: 550px;
-  } 
+  }
 
   #about-myself {
     max-width: 100%;
@@ -488,10 +487,11 @@ textarea:focus {
   .about-text p {
     max-width: 450px;
   }
+
   .about-wrapper .let-connect {
     margin-bottom: 20px;
   }
-  
+
   .hide-images {
     display: inline-block;
     margin-right: 10px;
