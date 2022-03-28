@@ -9,6 +9,9 @@
 - HTML
 - CSS
 
+## Live Demo (if available)
+
+[Live Demo Link](https://yussufob.github.io/My-Portfolio-Part-II/)
 
 ### Prerequisites
 - HTML & CSS
@@ -26,7 +29,8 @@
 - Commit the changes with a descriptive message (i.e xyz features added) 
 - Push the changes to changes to the repository (i.e git push)
 
-
+### Deployment
+- This app is deployed using Github pages (https://pages.github.com/)
 ## Authors
 
 👤 **Bashir Yussuf Olamilekan (Bash)**
