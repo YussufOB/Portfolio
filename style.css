@@ -201,7 +201,7 @@ textarea:focus {
 
 .let-connect {
   padding-top: 10px;
-  color: #091e42;
+  color: #374e75;
   font-size: 15px;
 }
 
@@ -312,7 +312,7 @@ textarea:focus {
 
 .topic-languages li {
   background-color: #ebebff;
-  color: #6070ff;
+  color: #374e75;
   padding: 8px 10px;
   border-radius: 12px;
   margin: 20px 10px;
