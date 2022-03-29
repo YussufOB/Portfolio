@@ -401,6 +401,10 @@ textarea:focus {
     min-width: 90%;
   }
 
+  .card-text p {
+    font-size: 20px;
+  }
+
   .topics li {
     padding-right: 10px;
     font-size: 18px;
@@ -450,7 +454,7 @@ textarea:focus {
   }
 
   .primary-text p {
-    font-size: 20px;
+    font-size: 25px;
     color: #fff;
     text-align: center;
     padding-bottom: 50px;
@@ -484,8 +488,14 @@ textarea:focus {
     justify-content: space-evenly;
   }
 
+  .about-text h1 {
+    font-size: 35px;
+  }
+
   .about-text p {
-    max-width: 450px;
+    max-width: 550px;
+    font-size: 22px;
+    padding: 10px 0;
   }
 
   .about-wrapper .let-connect {
