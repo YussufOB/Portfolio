@@ -18,6 +18,7 @@
 
 ### Setup
 - linters for HTML and CSS
+- Standard Accessibility tools (https://www.accessi.org/)
 
 ### Run tests
 - Open your terminal, move to the directory where you want to clone the app (i.e cd Documents) 
@@ -31,6 +32,7 @@
 
 ### Deployment
 - This app is deployed using Github pages (https://pages.github.com/)
+
 ## Authors
 
 👤 **Bashir Yussuf Olamilekan (Bash)**

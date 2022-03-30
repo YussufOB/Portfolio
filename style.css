@@ -56,7 +56,7 @@ button {
 }
 
 button:hover {
-  background: #6070ff;
+  background: #2a305c;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   color: #fff;
 }
@@ -201,7 +201,7 @@ textarea:focus {
 
 .let-connect {
   padding-top: 10px;
-  color: #7f8cff;
+  color: #374e75;
   font-size: 15px;
 }
 
@@ -312,10 +312,11 @@ textarea:focus {
 
 .topic-languages li {
   background-color: #ebebff;
-  color: #6070ff;
+  color: #374e75;
   padding: 8px 10px;
   border-radius: 12px;
   margin: 20px 10px;
+  font-size: 13px;
 }
 
 .topics li:first-child {
@@ -324,7 +325,7 @@ textarea:focus {
 }
 
 .card-text p {
-  font-size: 15px;
+  font-size: 14px;
   max-width: 300px;
 }
 
@@ -334,7 +335,7 @@ textarea:focus {
   /* NAV & HEADLINE SECTION STYLINGS USING MEDIA QUERY */
 
   .front-wrapper {
-    max-width: 100%;
+    min-width: 100%;
   }
 
   .menu-list {
@@ -348,21 +349,23 @@ textarea:focus {
 
   #headline-section {
     height: 100vh;
-    padding: 0 260px;
+    padding: 0 20px;
     border-bottom-left-radius: 200px;
     background-image: url(./image/Header_bg.svg);
+    background-position: 0 0;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
   }
 
   .text-area h1 {
-    font-size: 45px;
+    font-size: 40px;
     margin-top: 0;
     max-width: 400px;
   }
 
   .text-area p {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .section-container {
@@ -372,7 +375,7 @@ textarea:focus {
   /* NAV & HEADLINE SECTION STYLINGS USING MEDIA QUERY */
 
   .row-wrapper {
-    min-width: 1250px;
+    min-width: 750px;
   }
 
   .card-work {
@@ -390,7 +393,7 @@ textarea:focus {
   }
 
   .card-text p {
-    font-size: 16px;
+    font-size: 18px;
     min-width: 90%;
     padding: 0 10px 20px 0;
   }
@@ -450,7 +453,7 @@ textarea:focus {
   }
 
   .primary-text p {
-    font-size: 20px;
+    font-size: 25px;
     color: #fff;
     text-align: center;
     padding-bottom: 50px;
@@ -484,8 +487,192 @@ textarea:focus {
     justify-content: space-evenly;
   }
 
+  .about-text h1 {
+    font-size: 35px;
+  }
+
   .about-text p {
     max-width: 450px;
+    font-size: 17px;
+    padding: 10px 30px 10px 0;
+  }
+
+  .about-wrapper .let-connect {
+    margin-bottom: 20px;
+  }
+
+  .hide-images {
+    display: inline-flex;
+    width: 83px;
+  }
+
+  .show-images {
+    display: none;
+  }
+}
+
+@media (min-width: 1026px) {
+  /* NAV & HEADLINE SECTION STYLINGS USING MEDIA QUERY */
+
+  .front-wrapper {
+    max-width: 100%;
+  }
+
+  .menu-list {
+    display: flex;
+  }
+
+  .union-icon {
+    display: none;
+    width: 22px;
+  }
+
+  #headline-section {
+    height: 100vh;
+    padding: 0 260px;
+    border-bottom-left-radius: 200px;
+    background-image: url(./image/Header_bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .text-area h1 {
+    font-size: 45px;
+    margin-top: 0;
+    max-width: 400px;
+  }
+
+  .text-area p {
+    font-size: 20px;
+  }
+
+  .section-container {
+    padding: 20% 20% 20% 15%;
+  }
+
+  /* NAV & HEADLINE SECTION STYLINGS USING MEDIA QUERY */
+
+  .row-wrapper {
+    min-width: 70%;
+  }
+
+  .card-work {
+    display: grid;
+    align-items: center;
+    justify-content: start;
+    column-count: 2;
+    column-gap: 20px;
+    grid-template-columns: repeat(2, 50%);
+    border-radius: 12px;
+  }
+
+  .card-text {
+    min-height: 70%;
+  }
+
+  .card-text p {
+    font-size: 20px;
+    min-width: 90%;
+    padding: 0 10px 20px 0;
+  }
+
+  .card-text h2 {
+    font-size: 37px;
+    padding: 0 10px 20px;
+    min-width: 90%;
+  }
+
+  .topics li {
+    padding-right: 10px;
+    font-size: 18px;
+  }
+
+  .show-text {
+    display: none;
+  }
+
+  .hide-text {
+    display: inherit;
+  }
+
+  .bold {
+    font-weight: bold;
+    color: #344563;
+  }
+
+  .min-card-images {
+    display: none;
+  }
+
+  .max-card-images {
+    display: flex;
+  }
+
+  #contact-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url(./image/contact\ _form_background_shapes.svg);
+    background-color: #6070ff;
+    margin: -150px 0 0 0;
+    background-size: 100% 100%;
+    align-items: center;
+    max-width: 100%;
+    border-top-left-radius: 100px;
+    padding: 20px;
+  }
+
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .primary-text p {
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 50px;
+    max-width: 550px;
+  }
+
+  #about-myself {
+    max-width: 100%;
+    align-items: center;
+    margin: 0;
+    border-top-right-radius: 100px;
+  }
+
+  .language li {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .with-border {
+    border-bottom: 1px solid #ebebff;
+    padding: 20px 0;
+  }
+
+  #sub-list {
+    display: inline-block;
+  }
+
+  .about-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .about-text h1 {
+    font-size: 35px;
+  }
+
+  .about-text p {
+    max-width: 550px;
+    font-size: 22px;
+    padding: 10px 0;
   }
 
   .about-wrapper .let-connect {
@@ -495,6 +682,7 @@ textarea:focus {
   .hide-images {
     display: inline-block;
     margin-right: 10px;
+    width: 130px;
   }
 
   .show-images {
