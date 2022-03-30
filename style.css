@@ -492,7 +492,7 @@ textarea:focus {
   }
 
   .about-text p {
-    max-width: 500px;
+    max-width: 450px;
     font-size: 17px;
     padding: 10px 30px 10px 0;
   }
@@ -503,13 +503,13 @@ textarea:focus {
 
   .hide-images {
     display: inline-flex;
+    width: 83px;
   }
 
   .show-images {
     display: none;
   }
 }
-
 
 @media (min-width: 1026px) {
   /* NAV & HEADLINE SECTION STYLINGS USING MEDIA QUERY */
@@ -682,6 +682,7 @@ textarea:focus {
   .hide-images {
     display: inline-block;
     margin-right: 10px;
+    width: 130px;
   }
 
   .show-images {
