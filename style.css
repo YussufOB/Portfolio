@@ -140,30 +140,9 @@ textarea:focus {
   font-size: 20px;
 }
 
-.menuList,
-.closeIcon {
+.menuList {
   display: none;
 }
-
-/* .menuList {
-  position: fixed;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #000;
-  height: 100vh;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 10;
-}
-
-.closeIcon {
-  display: block;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-} */
 
 .menuList li {
   padding-right: 20px;
