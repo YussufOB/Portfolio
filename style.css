@@ -124,7 +124,7 @@ textarea:focus {
 
 /* NAV STYLING */
 
-.flex-nav {
+.flexNav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -140,21 +140,42 @@ textarea:focus {
   font-size: 20px;
 }
 
-.menu-list {
+.menuList,
+.closeIcon {
   display: none;
 }
 
-.menu-list li {
+/* .menuList {
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.closeIcon {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+} */
+
+.menuList li {
   padding-right: 20px;
   font-size: 20px;
   color: #344563;
 }
 
-.union-icon {
+.unionIcon {
   width: 22px;
 }
 
-.union-icon img {
+.unionIcon img {
   width: 100%;
 }
 
@@ -338,11 +359,11 @@ textarea:focus {
     min-width: 100%;
   }
 
-  .menu-list {
+  .menuList {
     display: flex;
   }
 
-  .union-icon {
+  .unionIcon {
     display: none;
     width: 22px;
   }
@@ -518,11 +539,11 @@ textarea:focus {
     max-width: 100%;
   }
 
-  .menu-list {
+  .menuList {
     display: flex;
   }
 
-  .union-icon {
+  .unionIcon {
     display: none;
     width: 22px;
   }
