@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
 
 * {
   box-sizing: border-box;
@@ -690,14 +690,13 @@ textarea:focus {
   }
 }
 
-
 /* trying styling */
 nav {
   font-family: sans-serif;
   display: flex;
   justify-content: space-between;
-  color: #fff;
-  background: #000;
+  color: #6070ff;
+  background: #fff;
   padding: 10px 5%;
 }
 
@@ -733,7 +732,6 @@ nav .openMenu,
 }
 
 @media (max-width: 768px) {
-
   nav {
     margin: 0 auto;
     max-width: 576px;
@@ -753,7 +751,6 @@ nav .openMenu,
     top: 0;
     right: 0;
     left: 0;
-    
   }
 
   nav .mainMenu .closeMenu {
@@ -771,6 +768,5 @@ nav .openMenu,
     background: none;
     color: aqua;
     font-size: 1.6rem;
-
   }
 }
