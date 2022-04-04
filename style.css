@@ -689,3 +689,88 @@ textarea:focus {
     display: none;
   }
 }
+
+
+/* trying styling */
+nav {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  background: #000;
+  padding: 10px 5%;
+}
+
+nav .logo {
+  font-size: 2rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+}
+
+nav .mainMenu li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 15px;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+nav .mainMenu li a:hover {
+  background: #fff;
+  color: #000;
+}
+
+nav .openMenu,
+.mainMenu .closeMenu {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+
+  nav {
+    margin: 0 auto;
+    max-width: 576px;
+  }
+  nav .mainMenu {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background: rgb(47, 56, 179);
+    height: 100vh;
+    max-width: 576px;
+    z-index: 10;
+    opacity: 0.9;
+    top: 0;
+    right: 0;
+    left: 0;
+    
+  }
+
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  nav .openMenu {
+    display: block;
+  }
+
+  nav .mainMenu li a:hover {
+    background: none;
+    color: aqua;
+    font-size: 1.6rem;
+
+  }
+}
