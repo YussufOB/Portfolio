@@ -716,12 +716,12 @@ nav .mainMenu li a {
   text-decoration: none;
   padding: 8px 15px;
   font-size: 1.3rem;
-  color: #fff;
+  color: #6070ff;
 }
 
 nav .mainMenu li a:hover {
-  background: #fff;
-  color: #000;
+  background: #6070ff;
+  color: #fff;
 }
 
 nav .openMenu,
@@ -736,6 +736,7 @@ nav .openMenu,
     margin: 0 auto;
     max-width: 576px;
   }
+
   nav .mainMenu {
     display: none;
     position: fixed;
