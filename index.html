@@ -1,56 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="./style.css" type="text/css">
-    <title>Portfolio Homepage</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" type="text/css" />
+  <title>Portfolio Homepage</title>
 </head>
+
 <body>
-    
   <!-- Navigation Bar Section -->
 
   <div class="wrapper">
     <div class="front-wrapper">
       <header>
-        <nav class="flex-nav">
-          <a href="https://yussufob.github.io/My-Portfolio-Part-II/" class="my-logo">Y-Bash</a>
-          <a href="https://yussufob.github.io/My-Portfolio-Part-II/" class="union-icon"><img src="./images/Union.svg" alt="list-icons"></a>
-          <ul class="menu-list">
-            <li><a href="https://yussufob.github.io/My-Portfolio-Part-II/">Portfolio</a></li>
-            <li><a href="https://yussufob.github.io/My-Portfolio-Part-II/">About</a></li>
-            <li>Contact</li>
+        <nav>
+          <div class="logo">Bash</div>
+          <div class="openMenu"><img src="./images/Union.svg" alt="hamburger"></div>
+          <ul class="mainMenu">
+            <li class="shieldOff1"><a href="#my-portfolio">Portfolio</a></li>
+            <li class="shieldOff2"><a href="#about-myself">About</a></li>
+            <li class="shieldOff3"><a href="#contact-me">Contact</a></li>
+            <li class="closeMenu"><img  src="./images/Close_Icon.svg" alt="closeMenu"></li>
           </ul>
         </nav>
       </header>
       <section id="headline-section">
         <div class="section-container">
           <div class="text-area">
-            <h1>I'm Yussuf <br>Glad to see you!</h1>
-            <p>I’m a software developer! I can help you build a product, feature or website Look through some of my work and experience!
-              If you like what you see and have a project you need coded, don’t hestiate to contact me.
+            <h1>I'm Yussuf <br />Glad to see you!</h1>
+            <p>
+              I’m a software developer! I can help you build a product,
+              feature or website Look through some of my work and experience!
+              If you like what you see and have a project you need coded,
+              don’t hestiate to contact me.
             </p>
           </div>
           <div class="let-connect">
             <h4>LET'S CONNECT</h4>
             <ul class="social-icons">
-              <li><img src="./images/twitter.png" alt="twitter"></li>
-              <li><img src="./images/linked.svg" alt="linked"></li>
-              <li><img src="./images/medium.svg" alt="medium"></li>
-              <li><img src="./images/github.svg" alt="github"></li>
-              <li><img src="./images/angellist.svg" alt="angellist"></li>
+              <li><img src="./images/twitter.png" alt="twitter" /></li>
+              <li><img src="./images/linked.svg" alt="linked" /></li>
+              <li><img src="./images/medium.svg" alt="medium" /></li>
+              <li><img src="./images/github.svg" alt="github" /></li>
+              <li><img src="./images/angellist.svg" alt="angellist" /></li>
             </ul>
           </div>
         </div>
       </section>
     </div>
 
-    <div class="row-wrapper">
+    <div class="row-wrapper" id="my-portfolio">
       <section class="card-work">
-        <div class="min-card-images"><img src="./images/Snapshoot_Portfolio.png" alt="Portfolio Snapshot"></div>
-        <div class="max-card-images"><img src="./images/Snapshoot_Portfolio_1.png" alt="Portfolio Snapshot"></div>
+        <div class="min-card-images">
+          <img src="./images/Snapshoot_Portfolio.png" alt="Portfolio Snapshot" />
+        </div>
+        <div class="max-card-images">
+          <img src="./images/Snapshoot_Portfolio_1.png" alt="Portfolio Snapshot" />
+        </div>
         <div class="card-text">
           <h2>Tonic</h2>
           <ul class="topics">
@@ -60,7 +69,10 @@
             <li>&#9679;</li>
             <li>2015</li>
           </ul>
-          <p>A daily selection of privately personalized reads: no accounts or sign-ups required.</p>
+          <p>
+            A daily selection of privately personalized reads: no accounts or
+            sign-ups required.
+          </p>
           <ul class="topic-languages">
             <li>html</li>
             <li>css</li>
@@ -84,9 +96,15 @@
             <li>&#9679;</li>
             <li>2015</li>
           </ul>
-          <p class="show-text">A daily selection of privately personalized reads: no accounts or sign-ups required.</p>
-          <p class="hide-text">Experimental content creation feature that allows users to add to an existing story over 
-            the course of a day without spamming their friends.</p>
+          <p class="show-text">
+            A daily selection of privately personalized reads: no accounts or
+            sign-ups required.
+          </p>
+          <p class="hide-text">
+            Experimental content creation feature that allows users to add to
+            an existing story over the course of a day without spamming their
+            friends.
+          </p>
           <ul class="topic-languages">
             <li>html</li>
             <li class="hide-text">Ruby on rail</li>
@@ -95,15 +113,23 @@
           </ul>
           <button type="button" class="action-buttons">See Project</button>
         </div>
-        <div class="min-card-images"><img src="./images/Snapshoot_Portfolio(1).png" alt="Portfolio Snapshot"></div>
-        <div class="max-card-images"><img src="./images/Snapshoot_Portfolio_2.png" alt="Portfolio Snapshot"></div>
+        <div class="min-card-images">
+          <img src="./images/Snapshoot_Portfolio(1).png" alt="Portfolio Snapshot" />
+        </div>
+        <div class="max-card-images">
+          <img src="./images/Snapshoot_Portfolio_2.png" alt="Portfolio Snapshot" />
+        </div>
       </section>
     </div>
 
     <div class="row-wrapper">
       <section class="card-work">
-        <div class="min-card-images"><img src="./images/Snapshoot_Portfolio(2).png" alt="Portfolio Snapshot"></div>
-        <div class="max-card-images"><img src="./images/Snapshoot_Portfolio_3.png" alt="Portfolio Snapshot"></div>
+        <div class="min-card-images">
+          <img src="./images/Snapshoot_Portfolio(2).png" alt="Portfolio Snapshot" />
+        </div>
+        <div class="max-card-images">
+          <img src="./images/Snapshoot_Portfolio_3.png" alt="Portfolio Snapshot" />
+        </div>
         <div class="card-text">
           <h2 class="show-text">Tonic</h2>
           <h2 class="hide-text">Facebook 360</h2>
@@ -116,10 +142,15 @@
             <li>&#9679;</li>
             <li>2015</li>
           </ul>
-          <p class="show-text">A daily selection of privately personalized reads: no accounts or sign-ups required.</p>
+          <p class="show-text">
+            A daily selection of privately personalized reads: no accounts or
+            sign-ups required.
+          </p>
           <p class="hide-text">
-            Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 
-            photos and videos on Gear VR.</p>
+            Exploring the future of media in Facebook's first Virtual Reality
+            app; a place to discover and enjoy 360 photos and videos on Gear
+            VR.
+          </p>
           <ul class="topic-languages">
             <li>html</li>
             <li class="hide-text">Ruby on rail</li>
@@ -146,9 +177,14 @@
             <li class="show-text">2015</li>
             <li class="hide-text">2018</li>
           </ul>
-          <p class="show-text">A daily selection of privately personalized reads: no accounts or sign-ups required.</p>
-          <p class="hide-text">A smart assistant to make driving more safe, efficient, and fun by unlocking your most 
-            expensive computer: your car.</p>
+          <p class="show-text">
+            A daily selection of privately personalized reads: no accounts or
+            sign-ups required.
+          </p>
+          <p class="hide-text">
+            A smart assistant to make driving more safe, efficient, and fun by
+            unlocking your most expensive computer: your car.
+          </p>
           <ul class="topic-languages">
             <li>html</li>
             <li class="hide-text">Ruby on rail</li>
@@ -157,8 +193,12 @@
           </ul>
           <button type="button" class="action-buttons">See Project</button>
         </div>
-        <div class="min-card-images"><img src="./images/Snapshoot_Portfolio(3).png" alt="Portfolio Snapshot"></div>
-        <div class="max-card-images"><img src="./images/Snapshoot_Portfolio_4.png" alt="Portfolio Snapshot"></div>
+        <div class="min-card-images">
+          <img src="./images/Snapshoot_Portfolio(3).png" alt="Portfolio Snapshot" />
+        </div>
+        <div class="max-card-images">
+          <img src="./images/Snapshoot_Portfolio_4.png" alt="Portfolio Snapshot" />
+        </div>
       </section>
     </div>
 
@@ -166,48 +206,90 @@
       <div class="about-wrapper">
         <div class="about-text">
           <h1>About Myself</h1>
-          <p>Hello I’m a software developer! I can help you build a product , feature or website Look 
-            through some of my work and experience! If you like what you see and have a project you
-             need coded, don’t hestiate to contact me.</p>
-            <div class="let-connect"><h3>LET'S CONNECT</h3></div>
-            <ul class="social-icons">
-              <li><a href="https://yussufob.github.io/My-Portfolio-Part-II/"><img src="./images/twitter.png" alt="twitter"></a></li>
-              <li><a href="https://yussufob.github.io/My-Portfolio-Part-II/"><img src="./images/linked.svg" alt="linked"></a></li>
-              <li><a href="https://yussufob.github.io/My-Portfolio-Part-II/"><img src="./images/medium.svg" alt="linked"></a></li>
-              <li><a href="https://yussufob.github.io/My-Portfolio-Part-II/"><img src="./images/github.svg" alt="linked"></a></li>
-              <li><a href="https://yussufob.github.io/My-Portfolio-Part-II/"><img src="./images/angellist.svg" alt="linked"></a></li>
-            </ul>
-            <button id="resume" type="button" class="action-buttons">Get my resume</button>
+          <p>
+            Hello I’m a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don’t
+            hestiate to contact me.
+          </p>
+          <div class="let-connect">
+            <h3>LET'S CONNECT</h3>
+          </div>
+          <ul class="social-icons">
+            <li>
+              <a href="https://yussufob.github.io/My-Portfolio-Part-II/"><img src="./images/twitter.png"
+                  alt="twitter" /></a>
+            </li>
+            <li>
+              <a href="https://yussufob.github.io/My-Portfolio-Part-II/"><img src="./images/linked.svg"
+                  alt="linked" /></a>
+            </li>
+            <li>
+              <a href="https://yussufob.github.io/My-Portfolio-Part-II/"><img src="./images/medium.svg"
+                  alt="linked" /></a>
+            </li>
+            <li>
+              <a href="https://yussufob.github.io/My-Portfolio-Part-II/"><img src="./images/github.svg"
+                  alt="linked" /></a>
+            </li>
+            <li>
+              <a href="https://yussufob.github.io/My-Portfolio-Part-II/"><img src="./images/angellist.svg"
+                  alt="linked" /></a>
+            </li>
+          </ul>
+          <button id="resume" type="button" class="action-buttons">
+            Get my resume
+          </button>
         </div>
         <div class="about-list">
           <ul class="language">
             <li class="with-border">Languages</li>
-            <li class="show-images"><img src="./images/Frame9.png" alt="html"></li>
-            <li class="show-images"><img src="./images/Frame10.png" alt="css"></li>
-            <li class="show-images"><img src="./images/Frame11.png" alt="javascript"></li>
-            <li class="hide-images"><img src="./images/Frame9(1).png" alt="html"></li>
-            <li class="hide-images"><img src="./images/Frame10(1).png" alt="css"></li>
-            <li class="hide-images"><img src="./images/Frame11(1).png" alt="javascript"></li>
+            <li class="show-images">
+              <img src="./images/Frame9.png" alt="html" />
+            </li>
+            <li class="show-images">
+              <img src="./images/Frame10.png" alt="css" />
+            </li>
+            <li class="show-images">
+              <img src="./images/Frame11.png" alt="javascript" />
+            </li>
+            <li class="hide-images">
+              <img src="./images/Frame9(1).png" alt="html" />
+            </li>
+            <li class="hide-images">
+              <img src="./images/Frame10(1).png" alt="css" />
+            </li>
+            <li class="hide-images">
+              <img src="./images/Frame11(1).png" alt="javascript" />
+            </li>
             <li class="with-border">Frameworks</li>
             <li class="with-border">Skills</li>
-            
           </ul>
         </div>
       </div>
     </section>
-    
+
     <section id="contact-me">
       <div class="primary-text">
         <h2>Contact me</h2>
-        <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it</p>
+        <p>
+          If you have an application you are interested in developing, a
+          feature that you need built or a project that needs coding. I’d love
+          to help with it
+        </p>
       </div>
       <form class="form-section" action="https://formspree.io/f/xzbovwwb" method="post">
-          <input type="text" title="First name" id="name" name="first_name" required placeholder="Your name" maxlength="30"/>
-          <input type="Email" title="email" id="email" name="email" required placeholder="username@example.com" />
-          <textarea title="Comments" id="comments" name="comments" required placeholder="Write your message here" maxlength="500"></textarea>
-          <button type="submit" class="action-buttons">Get in touch</button>
+        <input type="text" title="First name" id="name" name="first_name" required placeholder="Your name"
+          maxlength="30" />
+        <input type="Email" title="email" id="email" name="email" required placeholder="username@example.com" />
+        <textarea title="Comments" id="comments" name="comments" required placeholder="Write your message here"
+          maxlength="500"></textarea>
+        <button type="submit" class="action-buttons">Get in touch</button>
       </form>
     </section>
   </div>
+
+  <script src="./js/main.js"></script>
 </body>
+
 </html>

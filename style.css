@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
 
 * {
   box-sizing: border-box;
@@ -124,7 +124,7 @@ textarea:focus {
 
 /* NAV STYLING */
 
-.flex-nav {
+.flexNav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -140,21 +140,21 @@ textarea:focus {
   font-size: 20px;
 }
 
-.menu-list {
+.menuList {
   display: none;
 }
 
-.menu-list li {
+.menuList li {
   padding-right: 20px;
   font-size: 20px;
   color: #344563;
 }
 
-.union-icon {
+.unionIcon {
   width: 22px;
 }
 
-.union-icon img {
+.unionIcon img {
   width: 100%;
 }
 
@@ -338,11 +338,11 @@ textarea:focus {
     min-width: 100%;
   }
 
-  .menu-list {
+  .menuList {
     display: flex;
   }
 
-  .union-icon {
+  .unionIcon {
     display: none;
     width: 22px;
   }
@@ -518,11 +518,11 @@ textarea:focus {
     max-width: 100%;
   }
 
-  .menu-list {
+  .menuList {
     display: flex;
   }
 
-  .union-icon {
+  .unionIcon {
     display: none;
     width: 22px;
   }
@@ -687,5 +687,100 @@ textarea:focus {
 
   .show-images {
     display: none;
+  }
+}
+
+/* hamurger styling */
+nav {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  color: #6070ff;
+  background: #fff;
+  padding: 10px 5%;
+}
+
+nav .logo {
+  font-size: 2rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+}
+
+nav .mainMenu li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 15px;
+  font-size: 1.3rem;
+  color: #6070ff;
+}
+
+nav .mainMenu li a:hover {
+  background: #6070ff;
+  color: #fff;
+}
+
+nav .openMenu,
+.mainMenu .closeMenu {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  nav {
+    margin: 0 auto;
+    max-width: 576px;
+  }
+
+  nav .mainMenu {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    margin: 0 auto;
+    background: rgb(47, 56, 179);
+    height: 100vh;
+    max-width: 570px;
+    z-index: 10;
+    opacity: 0.9;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  nav .openMenu {
+    display: block;
+  }
+
+  nav .mainMenu li a {
+    font-weight: bold;
+    color: #fff;
+    padding: 8px 15px;
+    font-size: 30px;
+  }
+
+  nav .mainMenu li:first-child {
+    margin-top: 65px;
+  }
+
+  nav .mainMenu li a:hover {
+    background: none;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 32px;
   }
 }
