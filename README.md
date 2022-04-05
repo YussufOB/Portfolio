@@ -8,6 +8,7 @@
 
 - HTML
 - CSS
+- Javascript
 
 ## Live Demo (if available)
 
@@ -17,7 +18,7 @@
 - HTML & CSS
 
 ### Setup
-- linters for HTML and CSS
+- linters for HTML, CSS and Javascript
 - Standard Accessibility tools (https://www.accessi.org/)
 
 ### Run tests
