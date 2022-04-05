@@ -744,7 +744,7 @@ nav .openMenu,
     margin: 0 auto;
     background: rgb(47, 56, 179);
     height: 100vh;
-    max-width: 576px;
+    max-width: 570px;
     z-index: 10;
     opacity: 0.9;
     top: 0;
@@ -769,7 +769,7 @@ nav .openMenu,
   nav .mainMenu li a {
     font-weight: bold;
     color: #fff;
-    padding: 8px 100px;
+    padding: 8px 15px;
     font-size: 30px;
   }
 
