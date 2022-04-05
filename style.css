@@ -690,7 +690,7 @@ textarea:focus {
   }
 }
 
-/* trying styling */
+/* hamurger styling */
 nav {
   font-family: sans-serif;
   display: flex;
@@ -741,8 +741,8 @@ nav .openMenu,
     display: none;
     position: fixed;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     margin: 0 auto;
     background: rgb(47, 56, 179);
     height: 100vh;
@@ -765,9 +765,17 @@ nav .openMenu,
     display: block;
   }
 
+  nav .mainMenu li a {
+    font-weight: bold;
+    color: #fff;
+    padding: 20px 50px;
+    font-size: 2.3rem;
+  }
+
   nav .mainMenu li a:hover {
     background: none;
-    color: aqua;
-    font-size: 1.6rem;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 2.6rem;
   }
 }
