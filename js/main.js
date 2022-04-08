@@ -68,3 +68,9 @@ closeBtns.forEach(function (btn) {
     let modal = (btn.closest(".modal").style.display = "none");
   };
 });
+
+window.onclick = function(e) {
+  if(e.target.className === "modal") {
+    e.target.style.display = "none";
+  }
+};
