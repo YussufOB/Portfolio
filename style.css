@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
 
-* {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -327,6 +329,16 @@ textarea:focus {
 .card-text p {
   font-size: 14px;
   max-width: 300px;
+}
+
+.errorMsgContainer p {
+  display: none;
+  color: #fff;
+  font-style: italic;
+  /* position: relative; */
+  margin-top: 3px;
+  font-size: 1.2rem;
+  font-weight: 900;
 }
 
 /* MEDIA QUERY STYLING */
@@ -782,5 +794,222 @@ nav .openMenu,
     color: #fff;
     font-weight: bolder;
     font-size: 32px;
+  }
+}
+
+
+/** style popup model**/
+.modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(1, 71, 175, 0.5);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.model {
+  margin: 16px;
+  padding: 32px;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  background-color: #fff;
+}
+
+.model-placeholder {
+  width: 100%;
+  height: 30vh;
+  background: url("/images/Snapshoot_Portfolio.png") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border: 1px solid red;
+  border-radius: 8px;
+  /* position: relative; */
+}
+
+.popUpHeader {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.popUpHeader img {
+  width: 20px;
+  height: 20px;
+}
+
+.popUpX {
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.popUpList {
+  display: flex;
+}
+
+.popUpList li {
+  padding: 10px 12px 10px 0;
+  color: #7a869a;
+  font-size: 15px;
+}
+
+.popUpList li:first-child {
+  font-weight: bold;
+  color: #2a305c;
+}
+
+.popUpContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.popUpContent .footerList {
+  padding: 10px 0;
+  display: inline-flex;
+}
+
+.popUpContent .footerList li {
+  width: fit-content;
+  background-color: #d9dde4;
+  color: #4174f5;
+  padding: 5px 8px;
+  margin-right: 10px;
+  border-radius: 12px;
+}
+
+.popUpHide,
+.popUpContent .footerList li .popUpHide {
+  display: none;
+}
+
+.popUpButtons {
+  display: inline-flex;
+  justify-content: space-around;
+  border: 1px solid green;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.liveBtn {
+  display: inline-flex;
+  outline: none;
+  cursor: pointer;
+  pointer-events: auto;
+  height: 50px;
+  padding: 0;
+  background: #fff;
+  border: 1px solid #396df2;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.liveBtn:hover {
+  background: #091e42;;
+  color: #fff;
+}
+
+.liveBtn:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+.liveBtn .btn__text,
+.liveBtn .btn__icon {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 10px;
+  height: 100%;
+}
+
+.liveBtn .btn__icon {
+  font-size: 2.5em;
+}
+
+@media only screen and (min-width: 768px) {
+  .modalContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(193, 199, 208, 0.4);
+  }
+
+  .model {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .model-placeholder {
+    height: 50vh;
+    flex-basis: 100%;
+    margin-top: 10px;
+    background: url(./images/Snapshoot_Portfolio_1.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .popUpHeader {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .popUpHeader h2 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  
+  .popUpList {
+    display: flex;
+  }
+  
+  .popUpList li {
+    padding: 10px 12px 10px 0;
+    color: #7a869a;
+    font-size: 15px;
+  }
+  
+  .popUpList li:first-child {
+    font-weight: bold;
+    color: #2a305c;
+  }
+  
+  .popUpContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .popUpContent p {
+    max-width: 70%;
+    padding-right: 20px;
+  }
+  
+  .popUpHide,
+  .popUpContent .footerList li .popUpHide {
+    display: inherit;
+  }
+  .popUpContent .footerList {
+    padding: 10px 0;
+  }
+  
+  .popUpContent .footerList li {
+    display: inline-block;
+    color: #1c3868;
+    padding: 8px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+    margin: 10px 0;
+  }
+
+}
+
+/** display grid for medium version **/
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .model {
+    width: 90%;
   }
 }
