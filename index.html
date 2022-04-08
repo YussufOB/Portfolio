@@ -23,7 +23,7 @@
             <li class="shieldOff1"><a href="#my-portfolio">Portfolio</a></li>
             <li class="shieldOff2"><a href="#about-myself">About</a></li>
             <li class="shieldOff3"><a href="#contact-me">Contact</a></li>
-            <li class="closeMenu"><img  src="./images/Close_Icon.svg" alt="closeMenu"></li>
+            <li class="closeMenu"><img src="./images/Close_Icon.svg" alt="closeMenu"></li>
           </ul>
         </nav>
       </header>
@@ -78,7 +78,7 @@
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <button type="button" class="action-buttons act-btns" data-modal="modal1">See Project</button>
+          <button type="button" class="action-buttons modal-open" data-modal="modal1">See Project</button>
         </div>
       </section>
     </div>
@@ -111,7 +111,7 @@
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <button type="button" class="action-buttons act-btns" data-modal="modal2">See Project</button>
+          <button type="button" class="action-buttons modal-open" data-modal="modal2">See Project</button>
         </div>
         <div class="min-card-images">
           <img src="./images/Snapshoot_Portfolio(1).png" alt="Portfolio Snapshot" />
@@ -157,7 +157,7 @@
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <button type="button" class="action-buttons act-btns" data-modal="modal3">See Project</button>
+          <button type="button" class="action-buttons modal-open" data-modal="modal3">See Project</button>
         </div>
       </section>
     </div>
@@ -191,7 +191,7 @@
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <button type="button" class="action-buttons">See Project</button>
+          <button type="button" class="action-buttons modal-open" data-modal="modal4">See Project</button>
         </div>
         <div class="min-card-images">
           <img src="./images/Snapshoot_Portfolio(3).png" alt="Portfolio Snapshot" />
@@ -281,9 +281,10 @@
       <form class="form-section" action="https://formspree.io/f/xzbovwwb" method="post">
         <input type="text" title="First name" id="name" name="first_name" required placeholder="Your name"
           maxlength="30" />
-        <input type="Email" title="email" id="email" name="email"required placeholder="username@example.com" />
+        <input type="Email" title="email" id="email" name="email" required placeholder="username@example.com" />
         <div class="errorMsgContainer">
-          <textarea title="Comments" id="comments" name="comments" required placeholder="Write your message here" maxlength="500"></textarea>
+          <textarea title="Comments" id="comments" name="comments" required placeholder="Write your message here"
+            maxlength="500"></textarea>
           <p class="errorMsg">all letters must be in lowercase!</p>
         </div>
         <div>
@@ -294,11 +295,11 @@
   </div>
 
   <!-- POP UP MENU BEGINS -->
-  <div class="modalContainer" id="modal1">
-    <div class="model">
-      <div class="popUpHeader">
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <div class="modal-header">
         <h2>Tonic</h2>
-        <div class="popUpX"><img src="images/CancelIcon.svg" alt=""></div>
+        <div class="modal-close"><img src="images/CancelIcon.svg" alt=""></div>
       </div>
       <ul class="popUpList">
         <li>CANOPY</li>
@@ -307,17 +308,20 @@
         <li>&#9679;</li>
         <li>2015</li>
       </ul>
-      <div class="model-placeholder">
+      <div class="modal-content-placeholder">
       </div>
       <div class="popUpContent">
-        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, numquam
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, numquam
           consequuntur? Assumenda quae explicabo quis. Enim et aliquam vitae voluptatem maiores itaque dignissimos
           facilis deleniti, dolore, ipsa eveniet, nam nulla. Eos officiis maxime minus ratione tenetur ipsam, aut
-          fugit, consectetur voluptatibus sint totam in ex reprehenderit ab placeat ducimus laborum minima quo doloremque
-          quaerat?<span class="popUpHide">At, corrupti eligendi! Quos ut culpa sed consequatur iusto? Et hic, placeat, tempora labore quo
-          soluta eligendi, voluptates dolorum vero ad a inventore quos. Optio aut recusandae laudantium qui illum
-          facere atque blanditiis reiciendis molestias amet autem, eligendi assumenda. Eligendi incidunt et dicta, dolore
-          aspernatur eveniet!</span></p>
+          fugit, consectetur voluptatibus sint totam in ex reprehenderit ab placeat ducimus laborum minima quo
+          doloremque
+          quaerat?<span class="popUpHide">At, corrupti eligendi! Quos ut culpa sed consequatur iusto? Et hic, placeat,
+            tempora labore quo
+            soluta eligendi, voluptates dolorum vero ad a inventore quos. Optio aut recusandae laudantium qui illum
+            facere atque blanditiis reiciendis molestias amet autem, eligendi assumenda. Eligendi incidunt et dicta,
+            dolore
+            aspernatur eveniet!</span></p>
         <div class="footerContent">
           <ul class="footerList">
             <li>html</li>
@@ -341,33 +345,38 @@
       </div>
     </div>
   </div>
-  
+
   <!-- sub-modal 1 end -->
-  
-  <div class="modalContainer" id="modal2">
-    <div class="model">
-      <div class="popUpHeader">
+
+  <div class="modal" id="modal2">
+    <div class="modal-content">
+      <div class="modal-header">
         <h2>Multi-Post Stories</h2>
-        <div class="popUpX"><img src="images/CancelIcon.svg" alt=""></div>
+        <div class="modal-close"><img src="images/CancelIcon.svg" alt=""></div>
       </div>
       <ul class="popUpList">
-        <li>FACEBOOK</li>
+        <li class="show-text">CANOPY</li>
+        <li class="hide-text bold">FACEBOOK</li>
         <li>&#9679;</li>
-        <li>Back End Dev</li>
+        <li class="show-text">Back End Dev</li>
+        <li class="hide-text">Full Stack Dev</li>
         <li>&#9679;</li>
         <li>2015</li>
       </ul>
-      <div class="model-placeholder">
+      <div class="modal-content-placeholder">
       </div>
       <div class="popUpContent">
-        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, numquam
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, numquam
           consequuntur? Assumenda quae explicabo quis. Enim et aliquam vitae voluptatem maiores itaque dignissimos
           facilis deleniti, dolore, ipsa eveniet, nam nulla. Eos officiis maxime minus ratione tenetur ipsam, aut
-          fugit, consectetur voluptatibus sint totam in ex reprehenderit ab placeat ducimus laborum minima quo doloremque
-          quaerat?<span class="popUpHide">At, corrupti eligendi! Quos ut culpa sed consequatur iusto? Et hic, placeat, tempora labore quo
-          soluta eligendi, voluptates dolorum vero ad a inventore quos. Optio aut recusandae laudantium qui illum
-          facere atque blanditiis reiciendis molestias amet autem, eligendi assumenda. Eligendi incidunt et dicta, dolore
-          aspernatur eveniet!</span></p>
+          fugit, consectetur voluptatibus sint totam in ex reprehenderit ab placeat ducimus laborum minima quo
+          doloremque
+          quaerat?<span class="popUpHide">At, corrupti eligendi! Quos ut culpa sed consequatur iusto? Et hic, placeat,
+            tempora labore quo
+            soluta eligendi, voluptates dolorum vero ad a inventore quos. Optio aut recusandae laudantium qui illum
+            facere atque blanditiis reiciendis molestias amet autem, eligendi assumenda. Eligendi incidunt et dicta,
+            dolore
+            aspernatur eveniet!</span></p>
         <div class="footerContent">
           <ul class="footerList">
             <li>html</li>
@@ -394,30 +403,93 @@
 
   <!-- sub popup 2 end -->
 
-  <div class="modalContainer" id="modal3">
-    <div class="model">
-      <div class="popUpHeader">
-        <h2>UBER</h2>
-        <div class="popUpX"><img src="images/CancelIcon.svg" alt=""></div>
+  <div class="modal" id="modal3">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="show-text">Tonic</h2>
+        <h2 class="hide-text">Facebook 360</h2>
+        <div class="modal-close"><img src="images/CancelIcon.svg" alt=""></div>
       </div>
       <ul class="popUpList">
-        <li>FACEBOOK</li>
+        <li class="show-text">CANOPY</li>
+        <li class="hide-text bold">FACEBOOK</li>
         <li>&#9679;</li>
-        <li>Back End Dev</li>
+        <li class="show-text">Back End Dev</li>
+        <li class="hide-text">Full Stack Dev</li>
         <li>&#9679;</li>
         <li>2015</li>
       </ul>
-      <div class="model-placeholder">
+      <div class="modal-content-placeholder">
       </div>
       <div class="popUpContent">
-        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, numquam
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, numquam
           consequuntur? Assumenda quae explicabo quis. Enim et aliquam vitae voluptatem maiores itaque dignissimos
           facilis deleniti, dolore, ipsa eveniet, nam nulla. Eos officiis maxime minus ratione tenetur ipsam, aut
-          fugit, consectetur voluptatibus sint totam in ex reprehenderit ab placeat ducimus laborum minima quo doloremque
-          quaerat?<span class="popUpHide">At, corrupti eligendi! Quos ut culpa sed consequatur iusto? Et hic, placeat, tempora labore quo
-          soluta eligendi, voluptates dolorum vero ad a inventore quos. Optio aut recusandae laudantium qui illum
-          facere atque blanditiis reiciendis molestias amet autem, eligendi assumenda. Eligendi incidunt et dicta, dolore
-          aspernatur eveniet!</span></p>
+          fugit, consectetur voluptatibus sint totam in ex reprehenderit ab placeat ducimus laborum minima quo
+          doloremque
+          quaerat?<span class="popUpHide">At, corrupti eligendi! Quos ut culpa sed consequatur iusto? Et hic, placeat,
+            tempora labore quo
+            soluta eligendi, voluptates dolorum vero ad a inventore quos. Optio aut recusandae laudantium qui illum
+            facere atque blanditiis reiciendis molestias amet autem, eligendi assumenda. Eligendi incidunt et dicta,
+            dolore
+            aspernatur eveniet!</span></p>
+        <div class="footerContent">
+          <ul class="footerList">
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
+            <li class="popUpHide">github</li>
+            <li class="popUpHide">ruby</li>
+            <li class="popUpHide">bootstraps</li>
+          </ul>
+          <div class="popUpButtons">
+            <button type="button" class="liveBtn">
+              <span class="btn__text">See live</span>
+              <span class="btn__icon"><img src="images/liveIcon.svg" class="twitter-icon"></span>
+            </button>
+            <button class="liveBtn">
+              <span class="btn__text">See live</span>
+              <span class="btn__icon"><img src="images/liveGithub`.svg" class="github-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- sub modal 3 end -->
+
+  <div class="modal" id="modal4">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="show-text">Tonic</h2>
+        <h2 class="hide-text">Uber Navigation</h2>
+        <div class="modal-close"><img src="images/CancelIcon.svg" alt=""></div>
+      </div>
+      <ul class="popUpList">
+        <li class="show-text">CANOPY</li>
+        <li class="hide-text bold">UBER</li>
+        <li>&#9679;</li>
+        <li class="show-text">Back End Dev</li>
+        <li class="hide-text">Lead Developer</li>
+        <li>&#9679;</li>
+        <li class="show-text">2015</li>
+        <li class="hide-text">2018</li>
+      </ul>
+      <div class="modal-content-placeholder">
+      </div>
+      <div class="popUpContent">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, numquam
+          consequuntur? Assumenda quae explicabo quis. Enim et aliquam vitae voluptatem maiores itaque dignissimos
+          facilis deleniti, dolore, ipsa eveniet, nam nulla. Eos officiis maxime minus ratione tenetur ipsam, aut
+          fugit, consectetur voluptatibus sint totam in ex reprehenderit ab placeat ducimus laborum minima quo
+          doloremque
+          quaerat?<span class="popUpHide">At, corrupti eligendi! Quos ut culpa sed consequatur iusto? Et hic, placeat,
+            tempora labore quo
+            soluta eligendi, voluptates dolorum vero ad a inventore quos. Optio aut recusandae laudantium qui illum
+            facere atque blanditiis reiciendis molestias amet autem, eligendi assumenda. Eligendi incidunt et dicta,
+            dolore
+            aspernatur eveniet!</span></p>
         <div class="footerContent">
           <ul class="footerList">
             <li>html</li>
