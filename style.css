@@ -346,8 +346,6 @@ textarea:focus {
   display: none;
   color: #fff;
   font-style: italic;
-
-  /* position: relative; */
   margin-top: 3px;
   font-size: 1.2rem;
   font-weight: 900;
