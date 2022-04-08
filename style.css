@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -263,6 +263,11 @@ textarea:focus {
   flex-direction: row;
 }
 
+.modal-header img {
+  width: 20px;
+  height: 20px;
+}
+
 .social-icons li img {
   width: 30px;
   padding-right: 10px;
@@ -321,6 +326,12 @@ textarea:focus {
   font-size: 13px;
 }
 
+.popUpList li {
+  padding: 10px 12px 10px 0;
+  color: #7a869a;
+  font-size: 15px;
+}
+
 .topics li:first-child {
   font-weight: bold;
   color: #344563;
@@ -335,6 +346,7 @@ textarea:focus {
   display: none;
   color: #fff;
   font-style: italic;
+
   /* position: relative; */
   margin-top: 3px;
   font-size: 1.2rem;
@@ -797,7 +809,7 @@ nav .openMenu,
   }
 }
 
-/** style popup modal-content**/
+/** style popup modal-content **/
 .modal {
   position: fixed;
   top: 0;
@@ -805,6 +817,7 @@ nav .openMenu,
   width: 100%;
   height: 100vh;
   background-color: rgba(1, 71, 175, 0.5);
+
   /* opacity: 0; */
   display: none;
   pointer-events: none;
@@ -865,11 +878,6 @@ nav .openMenu,
   width: 100%;
 }
 
-.modal-header img {
-  width: 20px;
-  height: 20px;
-}
-
 .modal-close {
   cursor: pointer;
   pointer-events: auto;
@@ -877,12 +885,6 @@ nav .openMenu,
 
 .popUpList {
   display: flex;
-}
-
-.popUpList li {
-  padding: 10px 12px 10px 0;
-  color: #7a869a;
-  font-size: 15px;
 }
 
 .popUpList li:first-child {
@@ -995,7 +997,7 @@ nav .openMenu,
     background-position: center center;
     background-size: cover;
   }
-  
+
   #modal2 .modal-content .modal-content-placeholder {
     height: 50vh;
     flex-basis: 90%;
@@ -1004,7 +1006,7 @@ nav .openMenu,
     background-position: center center;
     background-size: cover;
   }
-  
+
   #modal3 .modal-content .modal-content-placeholder {
     height: 50vh;
     flex-basis: 90%;
@@ -1013,7 +1015,7 @@ nav .openMenu,
     background-position: center center;
     background-size: cover;
   }
-  
+
   #modal4 .modal-content .modal-content-placeholder {
     height: 50vh;
     flex-basis: 90%;
@@ -1033,22 +1035,22 @@ nav .openMenu,
     font-size: 3rem;
     font-weight: 700;
   }
-  
+
   .popUpList {
     display: flex;
   }
-  
+
   .popUpList li {
     padding: 10px 12px 10px 0;
     color: #7a869a;
     font-size: 15px;
   }
-  
+
   .popUpList li:first-child {
     font-weight: bold;
     color: #2a305c;
   }
-  
+
   .popUpContent {
     display: flex;
     flex-direction: row;
@@ -1059,15 +1061,16 @@ nav .openMenu,
     max-width: 70%;
     padding-right: 20px;
   }
-  
+
   .popUpHide,
   .popUpContent .footerList li .popUpHide {
     display: inherit;
   }
+
   .popUpContent .footerList {
     padding: 10px 0;
   }
-  
+
   .popUpContent .footerList li {
     display: inline-block;
     color: #1c3868;
@@ -1076,7 +1079,6 @@ nav .openMenu,
     font-size: 13px;
     margin: 10px 0;
   }
-
 }
 
 /** display grid for medium version **/
