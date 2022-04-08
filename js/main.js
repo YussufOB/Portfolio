@@ -73,4 +73,4 @@ function emailValidator() {
     });
   }
 }
-emailBtn.addEventListener("click", emailValidator);
+emailBtn.addEventListener("click", emailValidatr);
