@@ -2,6 +2,7 @@
 
 > This project contains mobile version and desktop version (skeleton part) of my favourite portfolio template aadopted from Figma.
 > Three features were created (Works, About Myself Section and contact me sectons) which my interest in software, my recent works and as well how to contact me are ncluded.
+>Javascript features (object) is also inculcated.
 
 
 ## Built With
