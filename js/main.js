@@ -58,7 +58,6 @@ modalBtns.forEach((btn) => {
     const mod = document.getElementById(modal);
 
     mod.style.display = 'block';
-
   };
 });
 
