@@ -52,7 +52,7 @@ emailBtn.addEventListener('click', emailValidator);
 const modalBtns = document.querySelectorAll('.modal-open');
 
 modalBtns.forEach((btn) => {
-  btn.onclick = function () {
+  btn.onclick = () => {
     const modal = btn.getAttribute('data-modal');
 
     const mod = document.getElementById(modal);
@@ -61,10 +61,6 @@ modalBtns.forEach((btn) => {
 
   };
 });
-
-function closeModal(closeMe) {
-  closeMe.style.display = 'none';
-}
 
 window.onclick = function (e) {
   if (e.target.className === 'modal') {
@@ -214,7 +210,7 @@ for (let i = 0; i < popUpData.length; i += 1) {
                   <div class='modal-content'>
                     <div class='modal-header'>
                       <h2>${item.title}</h2>
-                      <div class='modal-close' onclick='closeModal(modal${i})'><img src='${item.image}' alt='Cancel Icon'></div>
+                      <div class='modal-close' onclick="modal${i}.style.display = 'none';"><img src='${item.image}' alt='Cancel Icon'></div>
                     </div>
                     <ul id='modal${i}-title-list' class='popUpList'>`;
 
