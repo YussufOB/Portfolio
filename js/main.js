@@ -241,7 +241,7 @@ for (let i = 0; i < popUpData.length; i += 1) {
             </div>
             </div>
             </div>
-            </div>` + fetch;
+            </div>${fetch}`;
 
   body.innerHTML = modal;
 }
