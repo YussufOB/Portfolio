@@ -19,14 +19,22 @@
         <nav>
           <div class="logo">Bash</div>
           <div class="openMenu"><img src="./images/Union.svg" alt="hamburger"></div>
-          <ul class="mainMenu">
+          <!-- <ul class="minMenu">
             <li class="shieldOff1"><a href="#my-portfolio">Portfolio</a></li>
             <li class="shieldOff2"><a href="#about-myself">About</a></li>
             <li class="shieldOff3"><a href="#contact-me">Contact</a></li>
             <li class="closeMenu"><img  src="./images/Close_Icon.svg" alt="closeMenu"></li>
-          </ul>
+          </ul> -->
         </nav>
       </header>
+      <div class="desktop-header">
+        <div class="Dlogo">Bash</div>
+        <ul class="DMenu">
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
       <section id="headline-section">
         <div class="section-container">
           <div class="text-area">
@@ -281,9 +289,10 @@
       <form class="form-section" action="https://formspree.io/f/xzbovwwb" method="post">
         <input type="text" title="First name" id="name" name="first_name" required placeholder="Your name"
           maxlength="30" />
-        <input type="Email" title="email" id="email" name="email"required placeholder="username@example.com" />
+        <input type="Email" title="email" id="email" name="email" required placeholder="username@example.com" />
         <div class="errorMsgContainer">
-          <textarea title="Comments" id="comments" name="comments" required placeholder="Write your message here" maxlength="500"></textarea>
+          <textarea title="Comments" id="comments" name="comments" required placeholder="Write your message here"
+            maxlength="500"></textarea>
           <p class="errorMsg">all letters must be in lowercase!</p>
         </div>
         <div>
@@ -292,7 +301,15 @@
       </form>
     </section>
   </div>
-  
+
+  <!-- TRYING MAINMENU -->
+  <ul class="mainMenu">
+    <li class="shieldOff1"><a href="#my-portfolio">Portfolio</a></li>
+    <li class="shieldOff2"><a href="#about-myself">About</a></li>
+    <li class="shieldOff3"><a href="#contact-me">Contact</a></li>
+    <li class="closeMenu"><img src="./images/Close_Icon.svg" alt="closeMenu"></li>
+  </ul>
+
   <script src="./js/main.js"></script>
 </body>
 

@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -122,42 +122,6 @@ textarea:focus {
 .row-wrapper {
   max-width: 350px;
   margin: 0 auto;
-}
-
-/* NAV STYLING */
-
-.flexNav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 7%;
-  background-color: #fff;
-}
-
-.my-logo {
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  text-align: center;
-  color: #6070ff;
-  font-size: 20px;
-}
-
-.menuList {
-  display: none;
-}
-
-.menuList li {
-  padding-right: 20px;
-  font-size: 20px;
-  color: #344563;
-}
-
-.unionIcon {
-  width: 22px;
-}
-
-.unionIcon img {
-  width: 100%;
 }
 
 /* SECTION STYLING */
@@ -335,7 +299,6 @@ textarea:focus {
   display: none;
   color: #fff;
   font-style: italic;
-  /* position: relative; */
   margin-top: 3px;
   font-size: 1.2rem;
   font-weight: 900;
@@ -704,59 +667,81 @@ textarea:focus {
 
 /* hamurger styling */
 nav {
+  display: none;
+}
+
+.desktop-header {
   font-family: sans-serif;
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  max-width: 100%;
   color: #6070ff;
   background: #fff;
   padding: 10px 5%;
 }
 
-nav .logo {
+.desktop-header .Dlogo {
   font-size: 2rem;
   font-weight: bolder;
   cursor: pointer;
 }
 
-nav .mainMenu {
+.desktop-header .DMenu {
   display: flex;
-  list-style: none;
-}
-
-nav .mainMenu li a {
-  display: inline-block;
-  text-decoration: none;
-  padding: 8px 15px;
-  font-size: 1.3rem;
+  justify-content: flex-end;
   color: #6070ff;
 }
 
-nav .mainMenu li a:hover {
-  background: #6070ff;
+.desktop-header .DMenu li a {
+  font-weight: bold;
+  color: #6070ff;
+  padding: 10px 15px;
+  font-size: 20px;
+}
+
+.desktop-header .DMenu li a:hover {
+  background-color: #757fce;
   color: #fff;
 }
 
-nav .openMenu,
-.mainMenu .closeMenu {
-  display: none;
-  cursor: pointer;
-  font-size: 2rem;
-}
-
 @media (max-width: 768px) {
-  nav {
-    margin: 0 auto;
-    max-width: 576px;
+  .desktop-header {
+    display: none;
   }
 
-  nav .mainMenu {
+  nav {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 576px;
+    color: #6070ff;
+    background: #fff;
+    padding: 10px 5%;
+  }
+
+  nav .logo {
+    font-size: 2rem;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+
+  nav .openMenu,
+  .mainMenu .closeMenu {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+
+  .mainMenu {
     display: none;
     position: fixed;
     flex-direction: column;
     margin: 0 auto;
     background: rgb(47, 56, 179);
     height: 100vh;
-    max-width: 570px;
+    max-width: 720px;
     z-index: 10;
     opacity: 0.9;
     top: 0;
@@ -767,7 +752,7 @@ nav .openMenu,
     margin-block-end: 0;
   }
 
-  nav .mainMenu .closeMenu {
+  .mainMenu .closeMenu {
     display: block;
     position: absolute;
     top: 20px;
@@ -778,23 +763,29 @@ nav .openMenu,
     display: block;
   }
 
-  nav .mainMenu li a {
+  .mainMenu li a {
     font-weight: bold;
     color: #fff;
     padding: 8px 15px;
     font-size: 30px;
   }
 
-  nav .mainMenu li:first-child {
+  .mainMenu li:first-child {
     margin-top: 65px;
   }
 
-  nav .mainMenu li a:hover {
+  .mainMenu li a:hover {
     background: none;
     color: #fff;
     font-weight: bolder;
     font-size: 32px;
   }
+
+  .minMenu {
+    display: none;
+  }
 }
 
-
+.mainMenu {
+  display: none;
+}
