@@ -13,9 +13,28 @@
 <body>
   <!-- Navigation Bar Section -->
 
-  <div class="wrapper" id="blur">
+  <div class="wrapper">
     <div class="front-wrapper">
-      
+      <header>
+        <nav>
+          <div class="logo">Bash</div>
+          <div class="openMenu"><img src="./images/Union.svg" alt="hamburger"></div>
+          <!-- <ul class="minMenu">
+            <li class="shieldOff1"><a href="#my-portfolio">Portfolio</a></li>
+            <li class="shieldOff2"><a href="#about-myself">About</a></li>
+            <li class="shieldOff3"><a href="#contact-me">Contact</a></li>
+            <li class="closeMenu"><img  src="./images/Close_Icon.svg" alt="closeMenu"></li>
+          </ul> -->
+        </nav>
+      </header>
+      <div class="desktop-header">
+        <div class="Dlogo">Bash</div>
+        <ul class="DMenu">
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
       <section id="headline-section">
         <div class="section-container">
           <div class="text-area">
@@ -67,7 +86,7 @@
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <button type="button" class="action-buttons modal-open" data-modal="modal3" onclick="toggle()">See Project 1</button>
+          <button type="button" class="action-buttons act-btns" data-modal="modal1">See Project</button>
         </div>
       </section>
     </div>
@@ -100,7 +119,7 @@
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <button type="button" class="action-buttons modal-open" data-modal="modal2">See Project</button>
+          <button type="button" class="action-buttons act-btns" data-modal="modal2">See Project</button>
         </div>
         <div class="min-card-images">
           <img src="./images/Snapshoot_Portfolio(1).png" alt="Portfolio Snapshot" />
@@ -146,7 +165,7 @@
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <button type="button" class="action-buttons modal-open" data-modal="modal1">See Project</button>
+          <button type="button" class="action-buttons act-btns" data-modal="modal3">See Project</button>
         </div>
       </section>
     </div>
@@ -180,7 +199,7 @@
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <button type="button" class="action-buttons modal-open" data-modal="modal0">See Project</button>
+          <button type="button" class="action-buttons">See Project</button>
         </div>
         <div class="min-card-images">
           <img src="./images/Snapshoot_Portfolio(3).png" alt="Portfolio Snapshot" />
@@ -283,8 +302,18 @@
     </section>
   </div>
 
-  
+  <!--Hamburger Menu Begins -->
+
+  <ul class="mainMenu">
+    <li class="shieldOff1"><a href="#my-portfolio">Portfolio</a></li>
+    <li class="shieldOff2"><a href="#about-myself">About</a></li>
+    <li class="shieldOff3"><a href="#contact-me">Contact</a></li>
+    <li class="closeMenu"><img src="./images/Close_Icon.svg" alt="closeMenu"></li>
+  </ul>
+
+  <!--Hamburger Menu Ends -->
 
   <script src="./js/main.js"></script>
 </body>
+
 </html>
