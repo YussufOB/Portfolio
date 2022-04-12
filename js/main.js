@@ -31,11 +31,9 @@ function shield2() {
 
 function shield3() {
   mainMenu.style.display = 'none';
-  pagewrapper.style.filter = 'blur(0)';
 }
 
 openMenu.addEventListener('click', show);
 closeMenu.addEventListener('click', hide);
 shieldOff1.addEventListener('click', shield1);
 shieldOff2.addEventListener('click', shield2);
-shieldOff3.addEventListener('click', shield3);

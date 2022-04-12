@@ -227,6 +227,11 @@ textarea:focus {
   flex-direction: row;
 }
 
+.modal-header img {
+  width: 20px;
+  height: 20px;
+}
+
 .social-icons li img {
   width: 30px;
   padding-right: 10px;
@@ -283,6 +288,12 @@ textarea:focus {
   border-radius: 12px;
   margin: 20px 10px;
   font-size: 13px;
+}
+
+.popUpList li {
+  padding: 10px 12px 10px 0;
+  color: #7a869a;
+  font-size: 15px;
 }
 
 .topics li:first-child {
@@ -782,12 +793,3 @@ nav {
     font-weight: bolder;
     font-size: 32px;
   }
-
-  .minMenu {
-    display: none;
-  }
-}
-
-.mainMenu {
-  display: none;
-}
