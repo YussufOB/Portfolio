@@ -785,3 +785,55 @@ nav {
 .mainMenu {
   display: none;
 }
+
+/* Pop Up Menu Styling */
+.modal {
+  position: fixed;
+  display: none;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal-content {
+  justify-content: center;
+  align-items: center;
+  margin: 16px;
+  padding: 32px;
+  z-index: 2;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  background-color: #fff;
+}
+
+#modal-container {
+  display: none;
+    position: fixed;
+    flex-direction: column;
+    margin: 0 auto;
+    background: rgb(47, 56, 179);
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    opacity: 0.9;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
+/* .modal-content {
+  display: none;
+  flex-direction: row;
+  margin: auto;
+  height: 90vh;
+  width: 80vw;
+  padding: 32px;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  background-color: #fff;
+} */
