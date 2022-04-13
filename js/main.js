@@ -46,40 +46,6 @@ shieldOff3.addEventListener('click', shield3);
 
 const popUpData = [
   {
-    title: 'Uber Navigation',
-    image: 'images/CancelIcon.svg',
-    headingMobile: [
-      { name: 'CANOPY' },
-      { name: '&#9679;' },
-      { name: 'Back End Dev' },
-      { name: '&#9679;' },
-      { name: '2015' },
-    ],
-    headingDesktop: [
-      { name: 'Uber' },
-      { name: '&#9679;' },
-      { name: 'lead Developer' },
-      { name: '&#9679;' },
-      { name: '2018' },
-    ],
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima erronsequuntur autem neque temporibus, magni id. Dolorum vero voluptatibus aspernatur animi,eos nesciunt. Exercitationem.',
-    languages: [
-      { name: 'html' },
-      { name: 'css' },
-      { name: 'javascript' },
-    ],
-    otherLanguages: [
-      { name: 'github' },
-      { name: 'ruby' },
-      { name: 'bootstrap' },
-    ],
-    liveImage: 'images/liveIcon.svg',
-    sourceImage: 'images/liveGithub.svg',
-    live: 'https://bamsi.github.io/portfolio/',
-    source: 'https://github.com/bamsi/portfolio',
-  },
-  {
     title: 'Facebook',
     image: 'images/CancelIcon.svg',
     headingMobile: [
@@ -97,7 +63,9 @@ const popUpData = [
       { name: '2015' },
     ],
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima error,doloremque reprehenderit dkgmporibus, magni id. Dolorum vero voluptatibus aspernatur animi,eos nesciunt. Exercitationem.',
+      'Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    descriptionB:
+      'Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
     languages: [
       { name: 'html' },
       { name: 'css' },
@@ -131,7 +99,9 @@ const popUpData = [
       { name: '2015' },
     ],
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima error,doloremque reprehenderit debitis quam moleagni id. Dolorum vero voluptatibus aspernatur animi,eos nesciunt. Exercitationem.',
+      'Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    descriptionB:
+      'Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
     languages: [
       { name: 'html' },
       { name: 'css' },
@@ -165,7 +135,45 @@ const popUpData = [
       { name: '2015' },
     ],
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima error,doloremque reprehenderit debitis quam molestias vel, conseq vero voluptatibus aspernatur animi,eos nesciunt. Exercitationem.',
+      'Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    descriptionB:
+      'Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+    languages: [
+      { name: 'html' },
+      { name: 'css' },
+      { name: 'javascript' },
+    ],
+    otherLanguages: [
+      { name: 'github' },
+      { name: 'ruby' },
+      { name: 'bootstrap' },
+    ],
+    liveImage: 'images/liveIcon.svg',
+    sourceImage: 'images/liveGithub.svg',
+    live: 'https://bamsi.github.io/portfolio/',
+    source: 'https://github.com/bamsi/portfolio',
+  },
+  {
+    title: 'Uber Navigation',
+    image: 'images/CancelIcon.svg',
+    headingMobile: [
+      { name: 'CANOPY' },
+      { name: '&#9679;' },
+      { name: 'Back End Dev' },
+      { name: '&#9679;' },
+      { name: '2015' },
+    ],
+    headingDesktop: [
+      { name: 'Uber' },
+      { name: '&#9679;' },
+      { name: 'lead Developer' },
+      { name: '&#9679;' },
+      { name: '2018' },
+    ],
+    description:
+      'Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    descriptionB:
+      'Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
     languages: [
       { name: 'html' },
       { name: 'css' },
@@ -209,7 +217,7 @@ for (let i = 0; i < popUpData.length; i += 1) {
   modal += `</ul>
             <div id='bg-modal${i}' class='modal-content-placeholder'></div>
             <div class='popUpContent'>
-              <p>${item.description}<span class='popUpHide'>${item.description}</span></p>
+              <p>${item.description}<span class='popUpHide'>${item.descriptionB}</span></p>
               <div class='footerContent'>
                 <ul class='footerList'>`;
 
