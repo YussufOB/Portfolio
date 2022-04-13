@@ -46,7 +46,7 @@ shieldOff3.addEventListener('click', shield3);
 
 const popUpData = [
   {
-    title: 'Facebook',
+    title: 'Tonic',
     image: 'images/CancelIcon.svg',
     headingMobile: [
       { name: 'CANOPY' },
@@ -56,7 +56,7 @@ const popUpData = [
       { name: '2015' },
     ],
     headingDesktop: [
-      { name: 'FACEBOOK 360' },
+      { name: 'CANOPY' },
       { name: '&#9679;' },
       { name: 'Full Stack Dev' },
       { name: '&#9679;' },
@@ -128,9 +128,9 @@ const popUpData = [
       { name: '2015' },
     ],
     headingDesktop: [
-      { name: 'TONIC' },
+      { name: 'FACEBOOK' },
       { name: '&#9679;' },
-      { name: 'Back End Dev' },
+      { name: 'Full Stack Dev' },
       { name: '&#9679;' },
       { name: '2015' },
     ],

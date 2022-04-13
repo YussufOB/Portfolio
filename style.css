@@ -981,7 +981,7 @@ nav {
 
   #modal1 .modal-content .modal-content-placeholder {
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     margin-top: 10px;
     border-radius: 12px;
     background: url("./images/Snapshoot_Portfolio_2.png") no-repeat;
@@ -991,7 +991,7 @@ nav {
 
   #modal2 .modal-content .modal-content-placeholder {
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     margin-top: 10px;
     border-radius: 12px;
     background: url("./images/Snapshoot_Portfolio_3.png") no-repeat;
@@ -1001,7 +1001,7 @@ nav {
 
   #modal3 .modal-content .modal-content-placeholder {
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     margin-top: 10px;
     border-radius: 12px;
     background: url("./images/Snapshoot_Portfolio_4.png") no-repeat;
