@@ -52,12 +52,14 @@ const popUpData = [
       { name: 'CANOPY' },
       { name: '&#9679;' },
       { name: 'Back End Dev' },
+      { name: '&#9679;' },
       { name: '2015' },
     ],
     headingDesktop: [
       { name: 'Uber' },
       { name: '&#9679;' },
       { name: 'lead Developer' },
+      { name: '&#9679;' },
       { name: '2018' },
     ],
     description:
@@ -84,12 +86,14 @@ const popUpData = [
       { name: 'CANOPY' },
       { name: '&#9679;' },
       { name: 'Back End Dev' },
+      { name: '&#9679;' },
       { name: '2015' },
     ],
     headingDesktop: [
       { name: 'FACEBOOK 360' },
       { name: '&#9679;' },
       { name: 'Full Stack Dev' },
+      { name: '&#9679;' },
       { name: '2015' },
     ],
     description:
@@ -116,12 +120,14 @@ const popUpData = [
       { name: 'CANOPY' },
       { name: '&#9679;' },
       { name: 'Back End Dev' },
+      { name: '&#9679;' },
       { name: '2015' },
     ],
     headingDesktop: [
       { name: 'FACEBOOK' },
       { name: '&#9679;' },
       { name: 'Full Stack Dev' },
+      { name: '&#9679;' },
       { name: '2015' },
     ],
     description:
@@ -148,12 +154,14 @@ const popUpData = [
       { name: 'CANOPY' },
       { name: '&#9679;' },
       { name: 'Back End Dev' },
+      { name: '&#9679;' },
       { name: '2015' },
     ],
     headingDesktop: [
       { name: 'TONIC' },
       { name: '&#9679;' },
       { name: 'Back End Dev' },
+      { name: '&#9679;' },
       { name: '2015' },
     ],
     description:
@@ -188,18 +196,18 @@ for (let i = 0; i < popUpData.length; i += 1) {
                   </div>
                   <ul id='modal${i}-title-list' class='popUpList'>`;
 
-  if (window.screen.width < 768) {
-    item.headingMobile.forEach((headings) => {
-      modal += `<li>${headings.name}</li>`;
+  if (screen.width < 768) {
+    item.headingMobile.forEach((headingM) => {
+      modal += `<li>${headingM.name}</li>`;
     });
   } else {
-    item.headingDesktop.forEach((headings) => {
-      modal += `<li>${headings.name}</li>`;
+    item.headingDesktop.forEach((headingD) => {
+      modal += `<li>${headingD.name}</li>`;
     });
   }
 
   modal += `</ul>
-            <div id='title${i}bg' class='modal-content-placeholder'></div>
+            <div id='bg-modal${i}' class='modal-content-placeholder'></div>
             <div class='popUpContent'>
               <p>${item.description}<span class='popUpHide'>${item.description}</span></p>
               <div class='footerContent'>
