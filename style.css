@@ -124,42 +124,6 @@ textarea:focus {
   margin: 0 auto;
 }
 
-/* NAV STYLING */
-
-.flexNav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 7%;
-  background-color: #fff;
-}
-
-.my-logo {
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  text-align: center;
-  color: #6070ff;
-  font-size: 20px;
-}
-
-.menuList {
-  display: none;
-}
-
-.menuList li {
-  padding-right: 20px;
-  font-size: 20px;
-  color: #344563;
-}
-
-.unionIcon {
-  width: 22px;
-}
-
-.unionIcon img {
-  width: 100%;
-}
-
 /* SECTION STYLING */
 
 #headline-section {
@@ -714,59 +678,82 @@ textarea:focus {
 
 /* hamurger styling */
 nav {
+  display: none;
+}
+
+.desktop-header {
   font-family: sans-serif;
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  max-width: 100%;
   color: #6070ff;
   background: #fff;
   padding: 10px 5%;
 }
 
-nav .logo {
+.desktop-header .Dlogo {
   font-size: 2rem;
   font-weight: bolder;
   cursor: pointer;
 }
 
-nav .mainMenu {
+.desktop-header .DMenu {
   display: flex;
-  list-style: none;
-}
-
-nav .mainMenu li a {
-  display: inline-block;
-  text-decoration: none;
-  padding: 8px 15px;
-  font-size: 1.3rem;
+  justify-content: flex-end;
   color: #6070ff;
 }
 
-nav .mainMenu li a:hover {
-  background: #6070ff;
+.desktop-header .DMenu li a {
+  font-weight: bold;
+  color: #6070ff;
+  padding: 10px 15px;
+  font-size: 20px;
+}
+
+.desktop-header .DMenu li a:hover {
+  background-color: #757fce;
   color: #fff;
 }
 
-nav .openMenu,
-.mainMenu .closeMenu {
-  display: none;
-  cursor: pointer;
-  font-size: 2rem;
-}
-
 @media (max-width: 768px) {
-  nav {
-    margin: 0 auto;
-    max-width: 576px;
+  .desktop-header {
+    display: none;
   }
 
-  nav .mainMenu {
+  nav {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 576px;
+    color: #6070ff;
+    background: #fff;
+    padding: 10px 5%;
+  }
+
+  nav .logo {
+    font-size: 2rem;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+
+  nav .openMenu,
+  .mainMenu .closeMenu {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+
+  .mainMenu {
     display: none;
     position: fixed;
     flex-direction: column;
+    font-family: "Poppins", sans-serif;
     margin: 0 auto;
     background: rgb(47, 56, 179);
     height: 100vh;
-    max-width: 570px;
+    max-width: 720px;
     z-index: 10;
     opacity: 0.9;
     top: 0;
@@ -777,7 +764,7 @@ nav .openMenu,
     margin-block-end: 0;
   }
 
-  nav .mainMenu .closeMenu {
+  .mainMenu .closeMenu {
     display: block;
     position: absolute;
     top: 20px;
@@ -788,300 +775,34 @@ nav .openMenu,
     display: block;
   }
 
-  nav .mainMenu li a {
-    font-weight: bold;
+  .mainMenu li a {
+    font-family: "Poppins", sans-serif;
     color: #fff;
     padding: 8px 15px;
+  }
+
+  .mainMenu li {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 26px;
     font-size: 30px;
   }
 
-  nav .mainMenu li:first-child {
+  .mainMenu li:first-child {
     margin-top: 65px;
   }
 
-  nav .mainMenu li a:hover {
+  .mainMenu li a:hover {
     background: none;
     color: #fff;
     font-weight: bolder;
     font-size: 32px;
   }
-}
 
-/** style popup modal-content **/
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(1, 71, 175, 0.5);
-
-  /* opacity: 0; */
-  display: none;
-  pointer-events: none;
-}
-
-.modal-content {
-  margin: 16px;
-  padding: 32px;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-  background-color: #fff;
-}
-
-.modal-content-placeholder {
-  width: 100%;
-  height: 20vh;
-}
-
-#modal1 .modal-content .modal-content-placeholder {
-  width: 100%;
-  height: 20vh;
-  border-radius: 8px;
-  background: url("/images/Snapshoot_Portfolio.png") no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-#modal2 .modal-content .modal-content-placeholder {
-  width: 100%;
-  height: 20vh;
-  border-radius: 8px;
-  background: url("/images/Snapshoot_Portfolio\(1\).png") no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-#modal3 .modal-content .modal-content-placeholder {
-  width: 100%;
-  height: 20vh;
-  border-radius: 8px;
-  background: url("/images/Snapshoot_Portfolio\(2\).png") no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-#modal4 .modal-content .modal-content-placeholder {
-  width: 100%;
-  height: 20vh;
-  border-radius: 8px;
-  background: url("/images/Snapshoot_Portfolio\(3\).png") no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-.modal-header {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.modal-close {
-  cursor: pointer;
-  pointer-events: auto;
-}
-
-.popUpList {
-  display: flex;
-}
-
-.popUpList li:first-child {
-  font-weight: bold;
-  color: #2a305c;
-}
-
-.popUpContent {
-  display: flex;
-  flex-direction: column;
-}
-
-.popUpContent .footerList {
-  padding: 10px 0;
-  display: inline-flex;
-  max-width: 80%;
-}
-
-.popUpContent .footerList li {
-  width: fit-content;
-  background-color: #d9dde4;
-  color: #4174f5;
-  padding: 5px 8px;
-  margin-right: 10px;
-  border-radius: 12px;
-}
-
-.popUpHide,
-.popUpContent .footerList li .popUpHide {
-  display: none;
-}
-
-.popUpButtons {
-  display: inline-flex;
-  justify-content: space-around;
-  width: 80%;
-  padding: 10px 0;
-}
-
-.liveBtn {
-  display: inline-flex;
-  outline: none;
-  cursor: pointer;
-  pointer-events: auto;
-  height: 50px;
-  padding: 0;
-  background: #fff;
-  border: 1px solid #396df2;
-  border-radius: 8px;
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.liveBtn:hover {
-  background: #091e42;
-  color: #fff;
-}
-
-.liveBtn:active {
-  background: #2230d2;
-  color: #fff;
-}
-
-.liveBtn .btn__text,
-.liveBtn .btn__icon {
-  display: inline-flex;
-  align-items: center;
-  padding: 0 10px;
-  height: 100%;
-}
-
-.liveBtn .btn__icon {
-  font-size: 2.5em;
-}
-
-@media only screen and (min-width: 768px) {
-  .modal {
-    /* display: flex; */
+  .minMenu {
     display: none;
-    pointer-events: none;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(193, 199, 208, 0.4);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-  }
-
-  .modal-content {
-    width: 70%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .modal-content-placeholder {
-    height: 50vh;
-    flex-basis: 90%;
-    margin-top: 10px;
-    background-position: center center;
-    background-size: cover;
-  }
-
-  #modal1 .modal-content .modal-content-placeholder {
-    height: 50vh;
-    flex-basis: 90%;
-    margin-top: 10px;
-    background: url("/images/Snapshoot_Portfolio_1.png") no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
-
-  #modal2 .modal-content .modal-content-placeholder {
-    height: 50vh;
-    flex-basis: 90%;
-    margin-top: 10px;
-    background: url("/images/Snapshoot_Portfolio_2.png") no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
-
-  #modal3 .modal-content .modal-content-placeholder {
-    height: 50vh;
-    flex-basis: 90%;
-    margin-top: 10px;
-    background: url("/images/Snapshoot_Portfolio_3.png") no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
-
-  #modal4 .modal-content .modal-content-placeholder {
-    height: 50vh;
-    flex-basis: 90%;
-    margin-top: 10px;
-    background: url("/images/Snapshoot_Portfolio_4.png") no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
-
-  .modal-header {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .modal-header h2 {
-    font-size: 3rem;
-    font-weight: 700;
-  }
-
-  .popUpList {
-    display: flex;
-  }
-
-  .popUpList li {
-    padding: 10px 12px 10px 0;
-    color: #7a869a;
-    font-size: 15px;
-  }
-
-  .popUpList li:first-child {
-    font-weight: bold;
-    color: #2a305c;
-  }
-
-  .popUpContent {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .popUpContent p {
-    max-width: 70%;
-    padding-right: 20px;
-  }
-
-  .popUpHide,
-  .popUpContent .footerList li .popUpHide {
-    display: inherit;
-  }
-
-  .popUpContent .footerList {
-    padding: 10px 0;
-  }
-
-  .popUpContent .footerList li {
-    display: inline-block;
-    color: #1c3868;
-    padding: 8px 10px;
-    border-radius: 12px;
-    font-size: 13px;
-    margin: 10px 0;
   }
 }
 
-/** display grid for medium version **/
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
-  .modal-content {
-    width: 90%;
-  }
+.mainMenu {
+  display: none;
 }
