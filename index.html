@@ -13,7 +13,7 @@
 <body>
   <!-- Navigation Bar Section -->
 
-  <div class="wrapper">
+  <div class="wrapper" id="wrapper">
     <div class="front-wrapper">
       <header>
         <nav>
@@ -54,155 +54,11 @@
       </section>
     </div>
 
-    <div class="row-wrapper" id="my-portfolio">
-      <section class="card-work">
-        <div class="min-card-images">
-          <img src="./images/Snapshoot_Portfolio.png" alt="Portfolio Snapshot" />
-        </div>
-        <div class="max-card-images">
-          <img src="./images/Snapshoot_Portfolio_1.png" alt="Portfolio Snapshot" />
-        </div>
-        <div class="card-text">
-          <h2>Tonic</h2>
-          <ul class="topics">
-            <li>CANOPY</li>
-            <li>&#9679;</li>
-            <li>Back End Dev</li>
-            <li>&#9679;</li>
-            <li>2015</li>
-          </ul>
-          <p>
-            A daily selection of privately personalized reads: no accounts or
-            sign-ups required.
-          </p>
-          <ul class="topic-languages">
-            <li>html</li>
-            <li>css</li>
-            <li>javascript</li>
-          </ul>
-          <button type="button" class="action-buttons modal-open" data-modal="modal1">See Project</button>
-        </div>
-      </section>
-    </div>
+    <!-- project data inserting dynamically -->
 
-    <div class="row-wrapper">
-      <section class="card-work row-reverse">
-        <div class="card-text">
-          <h2>Multi-Post Stories</h2>
-          <ul class="topics">
-            <li class="show-text">CANOPY</li>
-            <li class="hide-text bold">FACEBOOK</li>
-            <li>&#9679;</li>
-            <li class="show-text">Back End Dev</li>
-            <li class="hide-text">Full Stack Dev</li>
-            <li>&#9679;</li>
-            <li>2015</li>
-          </ul>
-          <p class="show-text">
-            A daily selection of privately personalized reads: no accounts or
-            sign-ups required.
-          </p>
-          <p class="hide-text">
-            Experimental content creation feature that allows users to add to
-            an existing story over the course of a day without spamming their
-            friends.
-          </p>
-          <ul class="topic-languages">
-            <li>html</li>
-            <li class="hide-text">Ruby on rail</li>
-            <li>css</li>
-            <li>javascript</li>
-          </ul>
-          <button type="button" class="action-buttons modal-open" data-modal="modal2">See Project</button>
-        </div>
-        <div class="min-card-images">
-          <img src="./images/Snapshoot_Portfolio(1).png" alt="Portfolio Snapshot" />
-        </div>
-        <div class="max-card-images">
-          <img src="./images/Snapshoot_Portfolio_2.png" alt="Portfolio Snapshot" />
-        </div>
-      </section>
-    </div>
+    <div id="project-section"></div>
 
-    <div class="row-wrapper">
-      <section class="card-work">
-        <div class="min-card-images">
-          <img src="./images/Snapshoot_Portfolio(2).png" alt="Portfolio Snapshot" />
-        </div>
-        <div class="max-card-images">
-          <img src="./images/Snapshoot_Portfolio_3.png" alt="Portfolio Snapshot" />
-        </div>
-        <div class="card-text">
-          <h2 class="show-text">Tonic</h2>
-          <h2 class="hide-text">Facebook 360</h2>
-          <ul class="topics">
-            <li class="show-text">CANOPY</li>
-            <li class="hide-text bold">FACEBOOK</li>
-            <li>&#9679;</li>
-            <li class="show-text">Back End Dev</li>
-            <li class="hide-text">Full Stack Dev</li>
-            <li>&#9679;</li>
-            <li>2015</li>
-          </ul>
-          <p class="show-text">
-            A daily selection of privately personalized reads: no accounts or
-            sign-ups required.
-          </p>
-          <p class="hide-text">
-            Exploring the future of media in Facebook's first Virtual Reality
-            app; a place to discover and enjoy 360 photos and videos on Gear
-            VR.
-          </p>
-          <ul class="topic-languages">
-            <li>html</li>
-            <li class="hide-text">Ruby on rail</li>
-            <li>css</li>
-            <li>javascript</li>
-          </ul>
-          <button type="button" class="action-buttons modal-open" data-modal="modal3">See Project</button>
-        </div>
-      </section>
-    </div>
-
-    <div class="row-wrapper">
-      <section class="card-work row-reverse">
-        <div class="card-text">
-          <h2 class="show-text">Tonic</h2>
-          <h2 class="hide-text">Uber Navigation</h2>
-          <ul class="topics">
-            <li class="show-text">CANOPY</li>
-            <li class="hide-text bold">UBER</li>
-            <li>&#9679;</li>
-            <li class="show-text">Back End Dev</li>
-            <li class="hide-text">Lead Developer</li>
-            <li>&#9679;</li>
-            <li class="show-text">2015</li>
-            <li class="hide-text">2018</li>
-          </ul>
-          <p class="show-text">
-            A daily selection of privately personalized reads: no accounts or
-            sign-ups required.
-          </p>
-          <p class="hide-text">
-            A smart assistant to make driving more safe, efficient, and fun by
-            unlocking your most expensive computer: your car.
-          </p>
-          <ul class="topic-languages">
-            <li>html</li>
-            <li class="hide-text">Ruby on rail</li>
-            <li>css</li>
-            <li>javascript</li>
-          </ul>
-          <button type="button" class="action-buttons modal-open" data-modal="modal4">See Project</button>
-        </div>
-        <div class="min-card-images">
-          <img src="./images/Snapshoot_Portfolio(3).png" alt="Portfolio Snapshot" />
-        </div>
-        <div class="max-card-images">
-          <img src="./images/Snapshoot_Portfolio_4.png" alt="Portfolio Snapshot" />
-        </div>
-      </section>
-    </div>
+    <!-- project data inserting dynamically ends -->
 
     <section id="about-myself">
       <div class="about-wrapper">
@@ -299,15 +155,19 @@
 <!--Hamburger Menu Begins -->
 
   <ul class="mainMenu">
-    <li class="shieldOff1"><a href="#my-portfolio">Portfolio</a></li>
+    <li class="shieldOff1"><a href="#Tonic">Portfolio</a></li>
     <li class="shieldOff2"><a href="#about-myself">About</a></li>
     <li class="shieldOff3"><a href="#contact-me">Contact</a></li>
     <li class="closeMenu"><img src="./images/Close_Icon.svg" alt="closeMenu"></li>
   </ul>
 
   <!--Hamburger Menu Ends -->
-  
 
+  <!-- POP UP MENU BEGINS -->
+  <div id="modal-container"></div>
+  <!-- POP UP MENU ENDS -->
+  
   <script src="./js/main.js"></script>
 </body>
+
 </html>
