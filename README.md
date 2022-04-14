@@ -45,9 +45,16 @@
 
 👤 **Nedjwa Bouraiou**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
+- GitHub: [@githubhandle](https://github.com/nedjwa)
 - Twitter: [@ned_jwa](https://twitter.com/ned_jwa)
 - LinkedIn: [nedjwa-bouraiou](https://www.linkedin.com/in/nedjwa-bouraiou/)
+
+👤 **Freddy Kaberuka**
+
+- GitHub: [@githubhandle](https://github.com/freddykaberuka)
+- Twitter: [@ned_jwa](https://twitter.com/freddy_kab)
+- LinkedIn: [nedjwa-bouraiou](https://www.linkedin.com/in/freddykab/)
+
 
 ## 🤝 Contributing
 

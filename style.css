@@ -738,6 +738,7 @@ nav {
     display: none;
     position: fixed;
     flex-direction: column;
+    font-family: "Poppins", sans-serif;
     margin: 0 auto;
     background: rgb(47, 56, 179);
     height: 100vh;
@@ -765,8 +766,14 @@ nav {
 
   .mainMenu li a {
     font-weight: bold;
+    font-family: "Poppins", sans-serif;
     color: #fff;
     padding: 8px 15px;
+  }
+
+  .mainMenu li {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 26px;
     font-size: 30px;
   }
 
@@ -1036,14 +1043,14 @@ nav {
     padding: 5px 8px;
     margin-right: 20px;
     border-radius: 12px;
+
+  .minMenu {
+    display: none;
   }
 }
 
-/** display grid for medium version **/
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
-  .modal-content {
-    width: 90%;
-  }
+.mainMenu {
+  display: none;
 }
 
 
