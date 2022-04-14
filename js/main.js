@@ -225,7 +225,7 @@ for (let i = 0; i < popUpData.length; i += 1) {
     modal += `<li>${language.name}</li>`;
   });
 
-  modal += `</ul>`;
+  modal += '</ul>';
 
   if (window.screen.width > 768) {
     modal += '<ul class="footerList">';
@@ -248,7 +248,7 @@ for (let i = 0; i < popUpData.length; i += 1) {
             </div>
             </div>
             </div>
-            </div>` + fetch;
+            </div>${fetch}`;
 
   body.innerHTML = modal;
 }
