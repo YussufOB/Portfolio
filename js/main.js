@@ -92,7 +92,7 @@ const projects = [
     id: '1',
     orientation: 'row-reverse',
     titleMobile: 'Multi-Post Stories',
-    titleDesktop: 'Multi-PostStories',
+    titleDesktop: 'Multi-Post Stories',
     image: 'images/CancelIcon.svg',
     headingMobile: [
       { name: 'CANOPY' },
