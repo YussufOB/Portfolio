@@ -78,8 +78,8 @@ const popUpData = [
     ],
     liveImage: 'images/liveIcon.svg',
     sourceImage: 'images/liveGithub.svg',
-    live: 'https://bamsi.github.io/portfolio/',
-    source: 'https://github.com/bamsi/portfolio',
+    live: 'https://yussufob.github.io/My-Portfolio-Part-II/',
+    source: 'https://github.com/YussufOB/My-Portfolio-Part-II',
   },
   {
     title: 'Multi-Post Stories',
@@ -114,8 +114,8 @@ const popUpData = [
     ],
     liveImage: 'images/liveIcon.svg',
     sourceImage: 'images/liveGithub.svg',
-    live: 'https://bamsi.github.io/portfolio/',
-    source: 'https://github.com/bamsi/portfolio',
+    live: 'https://yussufob.github.io/My-Portfolio-Part-II/',
+    source: 'https://github.com/YussufOB/My-Portfolio-Part-II',
   },
   {
     title: 'Tonic',
@@ -150,8 +150,8 @@ const popUpData = [
     ],
     liveImage: 'images/liveIcon.svg',
     sourceImage: 'images/liveGithub.svg',
-    live: 'https://bamsi.github.io/portfolio/',
-    source: 'https://github.com/bamsi/portfolio',
+    live: 'https://yussufob.github.io/My-Portfolio-Part-II/',
+    source: 'https://github.com/YussufOB/My-Portfolio-Part-II',
   },
   {
     title: 'Uber Navigation',
@@ -186,8 +186,8 @@ const popUpData = [
     ],
     liveImage: 'images/liveIcon.svg',
     sourceImage: 'images/liveGithub.svg',
-    live: 'https://bamsi.github.io/portfolio/',
-    source: 'https://github.com/bamsi/portfolio',
+    live: 'https://yussufob.github.io/My-Portfolio-Part-II/',
+    source: 'https://github.com/YussufOB/My-Portfolio-Part-II',
   },
 ];
 
@@ -204,7 +204,7 @@ for (let i = 0; i < popUpData.length; i += 1) {
                   </div>
                   <ul id='modal${i}-title-list' class='popUpList'>`;
 
-  if (screen.width < 768) {
+  if (window.screen.width < 768) {
     item.headingMobile.forEach((headingM) => {
       modal += `<li>${headingM.name}</li>`;
     });
