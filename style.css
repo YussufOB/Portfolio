@@ -285,6 +285,13 @@ textarea:focus {
   font-size: 13px;
 }
 
+.popUpList li {
+  color: #7a869a;
+  padding-right: 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
 .topics li:first-child {
   font-weight: bold;
   color: #344563;
@@ -793,7 +800,6 @@ nav {
   display: none;
 }
 
-
 /* popup styles */
 .modal {
   display: none;
@@ -835,13 +841,6 @@ nav {
 
 .popUpList {
   display: flex;
-}
-
-.popUpList li {
-  color: #7a869a;
-  padding-right: 10px;
-  font-size: 13px;
-  font-weight: 600;
 }
 
 .popUpList li:first-child {
@@ -1044,13 +1043,8 @@ nav {
     margin-right: 20px;
     border-radius: 12px;
   }
+
   .minMenu {
     display: none;
   }
 }
-
-.mainMenu {
-  display: none;
-}
-
-
