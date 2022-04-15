@@ -400,3 +400,10 @@ function store() {
   };
   window.localStorage.setItem('form_data', JSON.stringify(formData));
 }
+function readData() {
+  const formData = JSON.parse(window.localStorage.getItem('form_data'));
+  document.getElementById('name').value = formData.name;
+  document.getElementById('email').value = formData.email;
+  document.getElementById('message').value = formData.message;
+}
+readData();
