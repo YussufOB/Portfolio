@@ -366,27 +366,4 @@ modalBtns.forEach((btn) => {
 
 // POP UP SCRIPT ENDS
 
-// EMAIL VALIDATOR SCRIPT BEGINS
-const emailId = document.getElementById('email');
-const emailBtn = document.getElementById('emailBtn');
-const errorMsg = document.querySelector('.errorMsg');
-const form = document.querySelector('.form-section');
-const mailRegex = /^[a-z][a-z0-9\-_.]+@[a-z]{2,}\.[a-z0-9]{2,}$/;
-
-function emailValidator() {
-  if (emailId.value.match(mailRegex)) {
-    errorMsg.style.display = 'none';
-    form.submit();
-  } else {
-    errorMsg.style.display = 'block';
-    form.addEventListener('submit', (event) => {
-      event.preventDefault();
-    });
-  }
-}
-
-emailBtn.addEventListener('click', emailValidator);
-
-// EMAIL VALIDATOR SCRIPT ENDS
-
 window.onload = loadProjects();
