@@ -136,14 +136,14 @@
           to help with it
         </p>
       </div>
-      <form class="form-section" action="https://formspree.io/f/xzbovwwb" method="post">
+      <form class="form-section" action="https://formspree.io/f/xzbovwwb" method="post" id="form-section">
         <input type="text" title="First name" id="name" name="first_name" required placeholder="Your name"
           maxlength="30" />
         <input type="Email" title="email" id="email" name="email" required placeholder="username@example.com" />
         <div class="errorMsgContainer">
           <textarea title="Comments" id="comments" name="comments" required placeholder="Write your message here"
             maxlength="500"></textarea>
-          <p class="errorMsg">email must be in lowercase!</p>
+          <p class="errorMsg" id="error">email must be in lowercase!</p>
         </div>
         <div>
           <button type="submit" id="emailBtn" class="action-buttons">Get in touch</button>

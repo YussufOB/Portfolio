@@ -374,9 +374,9 @@ function store() {
   const comments = document.getElementById('comments').value;
 
   const formData = {
-    name: name,
-    email: email,
-    comments: comments,
+    name,
+    email,
+    comments,
   };
   window.localStorage.setItem('form_data', JSON.stringify(formData));
 }
@@ -384,6 +384,12 @@ function store() {
 // FORM OBJECT ENDS
 
 // EMAIL VALIDATOR SCRIPT BEGINS
+
+const emailId = document.getElementById('email');
+const emailBtn = document.getElementById('emailBtn');
+const errorMsg = document.querySelector('.errorMsg');
+const form = document.querySelector('.form-section');
+const mailRegex = /^[a-z][a-z0-9\-_.]+@[a-z]{2,}\.[a-z0-9]{2,}$/;
 
 function emailValidator() {
   if (emailId.value.match(mailRegex)) {
@@ -395,7 +401,7 @@ function emailValidator() {
       event.preventDefault();
     });
   }
-  // store();
+  store();
 }
 
 emailBtn.addEventListener('click', emailValidator);
@@ -411,9 +417,7 @@ function readData() {
   document.getElementById('comments').value = formData.comments;
 }
 
-// FFUNCTION LOCAL STORAGE ENDS
-
-window.onload = function() {
+window.onload = function () {
   loadProjects();
   readData();
-}
+};
