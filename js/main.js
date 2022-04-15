@@ -42,7 +42,7 @@ shieldOff3.addEventListener('click', shield3);
 
 // HAMBURGER SCRIPT ENDS
 
-// POPUP SCRIPT BEGINS
+// PROJECT DATA SCRIPT BEGINS
 
 const projects = [
   {
@@ -276,7 +276,9 @@ function loadProjects() {
   projectListContainer.innerHTML = projectList;
 }
 
-window.onload = loadProjects();
+// PROJECT DATA SCRIPTS END
+
+// POP UP SCRIPT BEGINS
 
 const body = document.getElementById('modal-container');
 for (let i = 0; i < projects.length; i += 1) {
@@ -361,3 +363,25 @@ modalBtns.forEach((btn) => {
     wrapper.style.filter = 'blur(5px)';
   };
 });
+
+// POP UP SCRIPT ENDS
+
+// EMAIL VALIDATOR SCRIPT BEGINS
+
+function emailValidator() {
+  if (emailId.value.match(mailRegex)) {
+    errorMsg.style.display = 'none';
+    form.submit();
+  } else {
+    errorMsg.style.display = 'block';
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+    });
+  }
+}
+
+emailBtn.addEventListener('click', emailValidator);
+
+// EMAIL VALIDATOR SCRIPT ENDS
+
+window.onload = loadProjects();
