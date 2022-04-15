@@ -335,7 +335,7 @@ textarea:focus {
 
 .errorMsgContainer p {
   display: none;
-  color: #fff;
+  color: crimson;
   font-style: italic;
   margin-top: 3px;
   font-size: 1.2rem;
