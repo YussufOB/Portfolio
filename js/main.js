@@ -385,3 +385,18 @@ emailBtn.addEventListener('click', emailValidator);
 // EMAIL VALIDATOR SCRIPT ENDS
 
 window.onload = loadProjects();
+
+// LOCAL STORAGE SCRIPT BEGINS
+
+function store() {
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+
+  const formData = {
+    name,
+    email,
+    message,
+  };
+  window.localStorage.setItem('form_data', JSON.stringify(formData));
+}
