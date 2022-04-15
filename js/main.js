@@ -366,6 +366,23 @@ modalBtns.forEach((btn) => {
 
 // POP UP SCRIPT ENDS
 
+// FORM OBJECT BEGINS
+
+function store() {
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const comments = document.getElementById('comments').value;
+
+  const formData = {
+    name: name,
+    email: email,
+    comments: comments,
+  };
+  window.localStorage.setItem('form_data', JSON.stringify(formData));
+}
+
+// FORM OBJECT ENDS
+
 // EMAIL VALIDATOR SCRIPT BEGINS
 
 function emailValidator() {
@@ -378,32 +395,25 @@ function emailValidator() {
       event.preventDefault();
     });
   }
+  // store();
 }
 
 emailBtn.addEventListener('click', emailValidator);
 
 // EMAIL VALIDATOR SCRIPT ENDS
 
-window.onload = loadProjects();
-
 // LOCAL STORAGE SCRIPT BEGINS
 
-function store() {
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
-
-  const formData = {
-    name,
-    email,
-    message,
-  };
-  window.localStorage.setItem('form_data', JSON.stringify(formData));
-}
 function readData() {
   const formData = JSON.parse(window.localStorage.getItem('form_data'));
   document.getElementById('name').value = formData.name;
   document.getElementById('email').value = formData.email;
-  document.getElementById('message').value = formData.message;
+  document.getElementById('comments').value = formData.comments;
 }
-readData();
+
+// FFUNCTION LOCAL STORAGE ENDS
+
+window.onload = function() {
+  loadProjects();
+  readData();
+}
